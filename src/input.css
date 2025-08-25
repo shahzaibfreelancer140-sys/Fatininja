@@ -5,5 +5,11 @@
 @tailwind utilities;
 
 
+    @media (min-width: 1024px) {
+      .responsive-bg {
+        background-image: url('./assets/img/mobile\ black\ bg.png') !important;
+      }
+    }
+
 
 
