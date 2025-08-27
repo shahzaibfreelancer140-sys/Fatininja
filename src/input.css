@@ -11,5 +11,16 @@
       }
     }
 
+    .card {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
 
