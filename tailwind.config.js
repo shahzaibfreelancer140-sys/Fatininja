@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./build/**/*.{html,php,css,js}'], // Scans all subfolders within 'build'
   theme: {
-    extend: {},
+    extend: {
+     fontFamily: {
+        Satoshi: ['Satoshi', 'sans-serif'],
+         CabinetGrotesk: ['CabinetGrotesk', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
