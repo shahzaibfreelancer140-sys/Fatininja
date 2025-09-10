@@ -7,41 +7,49 @@
 
 
 @font-face {
-    font-family: Satoshi;
-    src: url(/build/assets/fonts/CabinetGrotesk-Regular.otf);
+    font-family:syne;
+    src: url(/build/assets/fonts/Syne-Regular.ttf);
 }
 
 @font-face {
-    font-family: CabinetGrotesk;
-    src: url(/build/assets/fonts/Satoshi-Regular.otf);
+    font-family:Poppins;
+    src: url(/build/assets/fonts/Poppins-Regular.ttf);
 }
+
 
 
 body p{
-    font-family: Satoshi;
+    font-family:Poppins;
 }
 
 body h1, h2, a, li{
-   font-family: CabinetGrotesk;
+   font-family:syne;
 }
 
 
-    @media (min-width: 1024px) {
-      .responsive-bg {
-        background-image: url('./assets/img/mobile\ black\ bg.png') !important;
+
+
+
+      @keyframes slide {
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
       }
-    }
 
-    .card {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.5s ease-in-out;
-    }
+      .animate-slide {
+        width: max-content;
+        animation: slide 20s linear infinite;
+      }
 
-    .card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
+      .active-dot {
+    background-color: #f97316; /* Tailwind orange-500 */
+  }
+      
+   
+  
+ 
 

@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
      fontFamily: {
-        Satoshi: ['Satoshi', 'sans-serif'],
-         CabinetGrotesk: ['CabinetGrotesk', 'sans-serif'],
+        syne: ['syne', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
