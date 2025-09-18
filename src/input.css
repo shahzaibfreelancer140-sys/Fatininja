@@ -399,6 +399,7 @@ ul li a:hover::after {
   background: radial-gradient(circle, rgba(3, 233, 244, 0.4), transparent 70%);
   animation: pulse 6s ease-in-out infinite;
   z-index: -1;
+  display: none;
 }
 
 .bg-bubbles::before,
@@ -628,4 +629,32 @@ div:hover .liquid {
 /* Twitter hover glow */
 .icon-wrapper:nth-child(3):hover img {
   filter: drop-shadow(0 0 10px #1DA1F2) drop-shadow(0 0 20px #0d95e8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.underline-animate {
+  position: absolute;
+  bottom: -15px; /* text ke neeche line */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #E2499F, #F89B25);
+  transition: width 1s ease;
+}
+
+/* Active state jab scroll hoke visible ho */
+.underline-animate.active {
+  width: 80%; /* adjust kar sakte ho */
 }

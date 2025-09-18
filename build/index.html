@@ -14,7 +14,7 @@
 </head>
 
 
-<body class="overflow-x-hidden bg-cover bg-no-repeat bg-black"
+<body class="overflow-x-hidden bg-cover bg-center bg-no-repeat bg-black"
   style="background-image: url(./assets/img/backgroundbody.png);">
   <header>
     <div class="flex justify-between items-center 2xl:px-24 lg:px-10 px-5  pt-6 2xl:pt-[62px] lg:pt-9">
@@ -388,10 +388,14 @@
   <!-- slider -->
   <section>
     <div class="w-full px-5 overflow-x-hidden 2xl:pl-24 lg:pl-10 pl-5">
-      <h1
-        class="font-medium text-white 2xl:text-[112px] xl:text-6xl lg:text-5xl text-3xl text-center 2xl:pt-36 lg:pt-16 pt-11">
-        Our happy Customers
-      </h1>
+      <div class="text-center">
+        <h1 id="customers-title" class="font-medium text-white 2xl:text-[112px] xl:text-6xl lg:text-5xl text-3xl 
+         text-center 2xl:pt-36 lg:pt-16 pt-11 relative inline-block">
+          Our happy Customers
+          <span class="underline-animate"></span>
+        </h1>
+
+      </div>
 
       <!-- Carousel Wrapper -->
       <div class="relative 2xl:mt-48 xl:mt-28 lg:mt-20 mt-20">
@@ -903,6 +907,26 @@
 
     });
   </script>
+
+
+
+
+<script>
+  const title = document.getElementById("customers-title");
+  const underline = title.querySelector(".underline-animate");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        underline.classList.add("active");
+        observer.unobserve(entry.target); // ek hi bar trigger hoga
+      }
+    });
+  }, { threshold: 0.5 }); // 50% visible hone par trigger hoga
+
+  observer.observe(title);
+</script>
+
 </body>
 
 </html>
