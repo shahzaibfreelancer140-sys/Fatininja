@@ -715,6 +715,31 @@
         });
     </script>
 
+
+<script>
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(acc => {
+      const btn = acc.querySelector('.accordion-btn');
+      const content = acc.querySelector('.accordion-content');
+      const icon = acc.querySelector('.icon');
+
+      btn.addEventListener('click', () => {
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all accordions
+        document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.icon').forEach(i => i.textContent = '+');
+
+        // Toggle current
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.textContent = '−';
+        }
+      });
+    });
+  </script>
+
      <script>
     const backToTop = document.getElementById("backToTop");
 
@@ -722,6 +747,7 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
+  
 </body>
 
 </html>
