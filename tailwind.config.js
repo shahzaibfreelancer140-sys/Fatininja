@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
      fontFamily: {
-        syne: ['syne', 'sans-serif'],
-        Poppins: ['Poppins', 'sans-serif'],
+     DelaGothicOne: ['DelaGothicOne', 'sans-serif'],
+        False: ['False', 'sans-serif'],
+         WorkSans: ['WorkSans', 'sans-serif'],
       },
     },
   },
