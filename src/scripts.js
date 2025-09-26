@@ -113,4 +113,53 @@ window.addEventListener("scroll", () => {
 
 
 
-  
+  $(function () {
+  $('.repeat').click(function () {
+    var h1 = $(this).parent().find("h1");
+    var classes = h1.attr('class');
+    h1.attr('class', 'animate');
+    setTimeout(function () {
+      h1.addClass(classes);
+    }, 20);
+  });
+});
+
+
+
+
+
+
+
+
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+    } else {
+      entry.target.classList.remove("in-view");
+    }
+  });
+}, { threshold: 0.2 });
+
+cards.forEach(card => observer.observe(card));
+
+
+
+
+
+
+
+
+
+
+
+
+// four card animation
+
+
+
+
+

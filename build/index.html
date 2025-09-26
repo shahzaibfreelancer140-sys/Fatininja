@@ -22,16 +22,47 @@
 
     <!-- Desktop Navigation Links -->
     <ul class="hidden lg:flex 2xl:gap-16 lg:gap-8 md:gap-6 text-[#ffffff]/70">
-      <li><a href="index.html" class="text-base font-normal leading-6">Home</a></li>
-      <li><a href="About.us.html" class="text-base font-normal leading-6">About</a></li>
-      <li><a href="single blog page.html" class="text-base font-normal leading-6">Blog</a></li>
-      <li><a href="" class="text-base font-normal leading-6">Contact</a></li>
+      <ul class="flex gap-10">
+        <li>
+          <a href="index.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
+            Home
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="About.us.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
+            About
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="single blog page.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
+            Blog
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
+            Contact
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+      </ul>
+
     </ul>
 
     <!-- Desktop Button -->
-    <div class="hidden lg:block py-2 px-5 rounded-lg bg-[#D3ED05]">
-      <button class="text-base font-semibold leading-6 text-black">Explore NFTs</button>
+    <div
+      class="hidden lg:block py-2 px-5 rounded-lg bg-[#D3ED05] hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
+      <button class="text-base font-semibold leading-6 text-black">
+        Explore NFTs
+      </button>
     </div>
+
 
     <!-- Mobile Toggle Button -->
     <button id="menu-toggle" class="lg:hidden flex flex-col gap-1">
@@ -50,8 +81,11 @@
         <li><a href="" class="text-base font-normal leading-6">Contact</a></li>
       </ul>
       <div class="flex justify-center">
-        <div class="py-2 px-5 rounded-lg bg-[#D3ED05]">
-          <button class="text-base font-semibold leading-6 text-black">Explore NFTs</button>
+        <div
+          class="py-2 px-5 rounded-lg bg-[#D3ED05] hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
+          <button class="text-base font-semibold leading-6 text-black">
+            Explore NFTs
+          </button>
         </div>
       </div>
     </div>
@@ -66,23 +100,38 @@
     <div class="text-center absolute z-20 w-full 2xl:pt-32 pt-24 lg:px-10 px-5 top-0">
       <div>
         <h1
-          class="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-[56px] text-2xl font-normal text-white -tracking-[-2px] leading-[100%]">
-          UNMASK THE
-          <br> FUTURE OF NFTS
+          class="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-[56px] text-2xl font-normal text-white -tracking-[-2px] leading-[100%] animate two">
+
+          <!-- UNMASK THE -->
+          <span>U</span><span>N</span><span>M</span><span>A</span><span>S</span><span>K</span>
+          <span>T</span><span>H</span><span>E</span>
+          <br>
+
+          <!-- FUTURE -->
+          <span>F</span><span>U</span><span>T</span><span>U</span><span>R</span><span>E</span>
+
+          <!-- OF -->
+          <span>O</span><span>F</span>
+
+          <!-- NFTS -->
+          <span>N</span><span>F</span><span>T</span><span>S</span>
         </h1>
+
+        <div class="2xl:pt-4 lg:pt-3 pt-2">
+          <p
+            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
+            Collect,
+            trade, and stealth mint exclusive masked ninja nfts in <br class="md:block hidden"> the shadows of the
+            blockchain.</p>
+        </div>
+        <div
+          class="2xl:py-3 lg:py-2 py-2 2xl:px-6 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block mt-6 hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
+          <button class="2xl:text-base xl:text-base lg:text-xs text-xs font-semibold leading-6 text-black">
+            Explore NFTs
+          </button>
+        </div>
+
       </div>
-      <div class="2xl:pt-4 lg:pt-3 pt-2">
-        <p
-          class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-          Collect,
-          trade, and stealth mint exclusive masked ninja nfts in <br class="md:block hidden"> the shadows of the
-          blockchain.</p>
-      </div>
-      <div class="2xl:py-3 lg:py-2 py-2 2xl:px-6 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block mt-6">
-        <button class="2xl:text-base xl:text-base lg:text-xs text-xs font-semibold leading-6 text-black">Explore
-          NFTs</button>
-      </div>
-    </div>
   </section>
 
 
@@ -190,24 +239,26 @@
         </div>
 
         <div class="w-full lg:flex md:grid grid-cols-2 justify-center items-center gap-6 relative 2xl:pt-36 pt-8">
-          <div class="absolute 2xl:left-12 lg:-left-8 2xl:top-16 lg:-top-5 lg:block hidden">
+
+          <!-- Red Tag (Floating Animation) -->
+          <div class="absolute 2xl:left-12 lg:-left-8 2xl:top-16 lg:-top-5 lg:block hidden floating">
             <img src="./assets/img/redtag.png" class="2xl:w-full lg:w-32" alt="">
           </div>
-          <div class="border-2 border-white/20 2xl:py-2 py-0 2xl:px-2 px-0 rounded-[50px] inline-block relative">
-            <div class="">
+
+          <!-- Card 1 -->
+          <div
+            class="card border-2 border-white/20 2xl:py-2 py-0 2xl:px-2 px-0 rounded-[50px] inline-block relative transition-transform duration-500 hover:rotate-3">
+            <div>
               <img src="./assets/img/seccard1.png" class="h-auto" alt="">
             </div>
             <div class="flex justify-center">
               <div
                 class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-[288px] top-[260px] w-[86%]">
-                <div class="">
-                  <div>
-                    <p class="2xl:text-base xl:text-base lg:text-xs  leading-6 font-normal text-white">Rarity Score:</p>
-                  </div>
-                  <div>
-                    <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                      8.7/10</h1>
-                  </div>
+                <div>
+                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
+                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
+                    8.7/10
+                  </h1>
                 </div>
                 <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
                   <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
@@ -216,22 +267,20 @@
             </div>
           </div>
 
+          <!-- Card 2 -->
           <div
-            class="border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2 rounded-[50px] inline-block relative md:mt-0 mt-3">
-            <div class="">
+            class="card border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2 rounded-[50px] inline-block relative md:mt-0 mt-3 transition-transform duration-500 hover:rotate-3">
+            <div>
               <img src="./assets/img/seccard2.png" alt="">
             </div>
             <div class="flex justify-center">
               <div
                 class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-[296px] top-[275px] w-[86%]">
-                <div class="">
-                  <div>
-                    <p class="2xl:text-base xl:text-base lg:text-xs  leading-6 font-normal text-white">Rarity Score:</p>
-                  </div>
-                  <div>
-                    <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                      8.7/10</h1>
-                  </div>
+                <div>
+                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
+                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
+                    8.7/10
+                  </h1>
                 </div>
                 <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
                   <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
@@ -239,22 +288,21 @@
               </div>
             </div>
           </div>
+
+          <!-- Card 3 -->
           <div
-            class="border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2  rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3">
-            <div class="">
+            class="card border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2 rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3 transition-transform duration-500 hover:rotate-3">
+            <div>
               <img src="./assets/img/seccard3.png" alt="">
             </div>
             <div class="flex justify-center">
               <div
                 class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-[296px] top-[275px] w-[86%]">
-                <div class="">
-                  <div>
-                    <p class="2xl:text-base xl:text-base lg:text-xs  leading-6 font-normal text-white">Rarity Score:</p>
-                  </div>
-                  <div>
-                    <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                      8.7/10</h1>
-                  </div>
+                <div>
+                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
+                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
+                    8.7/10
+                  </h1>
                 </div>
                 <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
                   <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
@@ -262,10 +310,13 @@
               </div>
             </div>
           </div>
-          <div class="absolute 2xl:right-0 -right-9 2xl:top-4 -top-10 lg:block hidden">
+
+          <!-- Perettag (Floating Animation) -->
+          <div class="absolute 2xl:right-0 -right-9 2xl:top-4 -top-10 lg:block hidden floating">
             <img src="./assets/img/perettag.png" class="2xl:w-full lg:w-32" alt="">
           </div>
         </div>
+
       </div>
     </section>
 
@@ -303,65 +354,58 @@
       <div
         class="w-full lg:flex md:grid grid-cols-2 justify-center gap-12 2xl:px-36 lg:px-10 px-5 text-white 2xl:pt-24 pt-8">
         <div>
-          <div class="bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <div>
-              <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">COLLECTIBLE AND
-                <br class="lg:block hidden"> UNIQUE NINJAS
-              </h1>
-            </div>
-            <div class="pt-3">
-              <p
-                class="2xl:text-xl xl:text-base text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-                Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
-                weapons, and skills.</p>
-            </div>
-            <div>
-              <img src="./assets/img/4card1.png" alt="">
-            </div>
-          </div>
+          <!-- Top Left -->
           <div
-            class="bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-6 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <div>
-              <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">COMMUNITY <br
-                  class="lg:block hidden"> POWERED DAO</h1>
-            </div>
-            <div class="pt-3">
-              <p class="2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-                The more your ninja, the more rewards and special <br class="2xl:block hidden"> access you unlock.</p>
-            </div>
-            <div>
-              <img src="./assets/img/4card3.png" alt="">
-            </div>
+            class="animate-card from-top-left bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
+            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
+              COLLECTIBLE AND <br class="lg:block hidden"> UNIQUE NINJAS
+            </h1>
+            <p
+              class="pt-3 2xl:text-xl xl:text-base text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
+              Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
+              weapons, and skills.
+            </p>
+            <img src="./assets/img/4card1.png" alt="">
           </div>
 
-        </div>
-        <div class="lg:pt-0 md:pt-0 pt-3">
-          <div class="bg-[#04141C] 2xl:py-12 py-6 2xl:px-10 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <div>
-              <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">STAKING AND
-                $SHADOW <br class="lg:block hidden"> REWARDS</h1>
-            </div>
-            <div class="pt-3">
-              <p class="2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-                Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
-                weapons, and skills.</p>
-            </div>
-            <div>
-              <img src="./assets/img/4card2.png" alt="">
-            </div>
-          </div>
+          <!-- Bottom Left -->
           <div
-            class="bg-[#072733] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <div>
-              <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">READY TO JOIN
-                THE <br class="lg:block hidden"> CLAN?</h1>
-            </div>
-            <div class="pt-3">
-              <p class="2xl:text-md xl:text-sm text-xs 2xl:leading-0 lg:leading-5 leading-5 font-normal text-white/70">
-                Start your journey with oftninjas and unlock access to rareninjas and a <br class="2xl:block hidden">
-                powerful Web3 community.
-              </p>
-            </div>
+            class="animate-card from-bottom-left bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-6 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
+            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
+              COMMUNITY <br class="lg:block hidden"> POWERED DAO
+            </h1>
+            <p class="pt-3 2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
+              The more your ninja, the more rewards and special <br class="2xl:block hidden"> access you unlock.
+            </p>
+            <img src="./assets/img/4card3.png" alt="">
+          </div>
+        </div>
+
+        <div class="lg:pt-0 md:pt-0 pt-3">
+          <!-- Top Right -->
+          <div
+            class="animate-card from-top-right bg-[#04141C] 2xl:py-12 py-6 2xl:px-10 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
+            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
+              STAKING AND $SHADOW <br class="lg:block hidden"> REWARDS
+            </h1>
+            <p class="pt-3 2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
+              Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
+              weapons, and skills.
+            </p>
+            <img src="./assets/img/4card2.png" alt="">
+          </div>
+
+          <!-- Bottom Right -->
+          <div
+            class="animate-card from-bottom-right bg-[#072733] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
+            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
+              READY TO JOIN THE <br class="lg:block hidden"> CLAN?
+            </h1>
+            <p
+              class="pt-3 2xl:text-md xl:text-sm text-xs 2xl:leading-0 lg:leading-5 leading-5 font-normal text-white/70">
+              Start your journey with oftninjas and unlock access to rareninjas and a <br class="2xl:block hidden">
+              powerful Web3 community.
+            </p>
             <div
               class="2xl:py-5 lg:py-2 py-2 2xl:px-12 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block 2xl:mt-10 xl:mt-14 lg:mt-4 md:mt-9 mt-5 2xl:mb-24 xl:mb-14 lg:mb-7 mb-8">
               <button class="2xl:text-xl xl:text-base lg:text-xs text-xs font-semibold leading-6 text-black">Mint Your
@@ -369,6 +413,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
 
@@ -394,10 +439,10 @@
 
 
       <div class="2xl:pt-12 pt-4 relative">
-        <div class="flex justify-center">
+        <div class="flex justify-center overflow-hidden overflow-x-hidden">
           <img src="./assets/img/rotateani.png" class="2xl:w-[974px] xl:w-[800px] lg:w-[600px] md:w-[500px] 
             2xl:h-[972px] xl:h-[800px] lg:h-[600px] md:h-[500px]
-            animate-spin-slow" alt="">
+            animate-spin-slow " alt="">
         </div>
 
         <div class="flex justify-center">
@@ -960,13 +1005,16 @@
 
     </section>
 
-
     <div class="w-full flex justify-center py-6 2xl:mt-48 mt-10">
-      <button id="backToTop" class="flex items-center gap-2 text-white px-6 py-3 ">
-        <i class="fa-solid fa-arrow-up 2xl:text-2xl text-xs"></i>
-        <span class="font-semibold 2xl:text-3xl text-sm leading-8">Back to top</span>
+      <button id="backToTop" class="flex items-center gap-2 text-white px-6 py-3 transition-colors duration-300 group">
+
+        <i class="fa-solid fa-arrow-up 2xl:text-2xl text-xs group-hover:text-[#D3ED05] animate-bounce-slow"></i>
+        <span class="font-semibold 2xl:text-3xl text-sm leading-8 group-hover:text-[#D3ED05]">
+          Back to top
+        </span>
       </button>
     </div>
+
 
 
 
@@ -1161,6 +1209,29 @@
     counters.forEach(counter => observer.observe(counter));
   </script>
 
+
+
+  <!-- cards animation 4 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".animate-card");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add("show");
+              }, i * 200); // har card delay se show hoga
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      cards.forEach((card) => observer.observe(card));
+    });
+  </script>
 </body>
 
 </html>
