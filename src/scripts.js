@@ -161,5 +161,80 @@ cards.forEach(card => observer.observe(card));
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero heading letters
+  gsap.from(".hero-heading span", {
+    y: 80,
+    opacity: 0,
+    stagger: 0.05,
+    ease: "expo.out",
+    duration: 1.2,
+    delay: 0.5
+  });
+
+  // Hero para
+  gsap.from(".hero-para", {
+    y: 40,
+    opacity: 0,
+    ease: "power3.out",
+    duration: 1,
+    delay: 1.2
+  });
+
+  // Hero button
+  gsap.from(".hero-btn", {
+    scale: 0.8,
+    opacity: 0,
+    ease: "back.out(1.7)",
+    duration: 0.8,
+    delay: 1.5
+  });
+
+  // Navbar
+  gsap.from(".nav-anim", {
+    y: -50,
+    opacity: 0,
+    ease: "power2.out",
+    duration: 1
+  });
+
+  // Background
+  gsap.from(".hero-bg", {
+    opacity: 0,
+    scale: 1.05,
+    duration: 2,
+    ease: "power1.out"
+  });
+
+  // Counters
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach(counter => {
+    let target = +counter.getAttribute("data-target");
+
+    ScrollTrigger.create({
+      trigger: counter,
+      start: "top 80%",
+      onEnter: () => {
+        gsap.fromTo(counter, { innerText: 0 }, {
+          innerText: target,
+          duration: 2,
+          ease: "power1.out",
+          snap: { innerText: 1 },
+          onUpdate: function () {
+            counter.innerText = Math.floor(counter.innerText) + (counter.dataset.suffix || "");
+          }
+        });
+      }
+    });
+  });
+});
+
+
+
+
+
+
 
 

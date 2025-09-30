@@ -270,12 +270,15 @@ h2 {
 .from-top-left {
   transform: translate(-120px, -120px);
 }
+
 .from-bottom-left {
   transform: translate(-120px, 120px);
 }
+
 .from-top-right {
   transform: translate(120px, -120px);
 }
+
 .from-bottom-right {
   transform: translate(120px, 120px);
 }
@@ -288,9 +291,12 @@ h2 {
 /* backbutton */
 /* Icon ka slow bounce */
 @keyframes bounce-slow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
@@ -298,4 +304,114 @@ h2 {
 
 .animate-bounce-slow {
   animation: bounce-slow 1.5s infinite;
+}
+
+
+
+
+
+/* moonbirds */
+@keyframes floatUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatUpMobile {
+  0% {
+    transform: translateY(120px);
+    /* 📱 Mobile ke liye kam distance */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-floatUp {
+  animation: floatUp 1.5s ease-out forwards;
+}
+
+.animate-floatUp-mobile {
+  animation: floatUpMobile 1.5s ease-out forwards;
+}
+
+
+@keyframes flap {
+
+  0%,
+  100% {
+    transform: scaleY(1.3);
+  }
+
+  50% {
+    transform: scaleY(0.8);
+  }
+}
+
+.animate-floatUp {
+  animation: floatUp 1.5s ease-out forwards;
+}
+
+.animate-flap {
+  animation: flap 1s infinite ease-in-out;
+}
+
+
+
+/* flowers */
+@keyframes flowerFallRotate {
+  0% {
+    transform: translateY(-200px) rotate(0deg) scale(1);
+    opacity: 0;
+    filter: brightness(1.5);
+  }
+  50% {
+    transform: translateY(100px) rotate(180deg) scale(1.1);
+    opacity: 1;
+    filter: brightness(2);
+  }
+  100% {
+    transform: translateY(300px) rotate(360deg) scale(1);
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* 👇 Mobile ke liye short distance */
+@keyframes flowerFallRotateMobile {
+  0% {
+    transform: translateY(-100px) rotate(0deg) scale(1);
+    opacity: 0;
+    filter: brightness(1.5);
+  }
+  50% {
+    transform: translateY(50px) rotate(180deg) scale(1.05);
+    opacity: 1;
+    filter: brightness(2);
+  }
+  100% {
+    transform: translateY(150px) rotate(360deg) scale(1);
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+.animate-flower {
+  animation: flowerFallRotate 2.5s ease-out forwards;
+}
+
+/* 📱 Mobile override */
+@media (max-width: 768px) {
+  .animate-flower {
+    animation: flowerFallRotateMobile 2.5s ease-out forwards;
+  }
 }
