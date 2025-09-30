@@ -814,7 +814,8 @@
             <img src="./assets/img/smalbird r.png"
               class="absolute 2xl:top-14 xl:top-12 lg:top-8 top-6 2xl:left-14 xl:left-56 lg:left-52 left-48 2xl:w-6 xl:w-3 lg:w-3 w-3 animate-flap delay-1000">
           </div>
-          <div class="absolute z-10 2xl:top-44 xl:-top-24 lg:-top-80 -top-64 2xl:left-10 flex flex-col gap-6 flower-on-scroll"
+          <div
+            class="absolute z-10 2xl:top-44 xl:-top-24 lg:-top-80 -top-64 2xl:left-10 flex flex-col gap-6 flower-on-scroll"
             data-delay="500">
             <img src="./assets/img/flower.png" class="absolute 2xl:top-64 xl:top-[358px] lg:top-[419px] md:top-[400px] top-64 
               2xl:left-[440px] xl:left-[368px] lg:left-64 md:left-48 left-24 
@@ -861,11 +862,19 @@
       <div
         class="w-full lg:flex md:grid grid-cols-2 justify-center items-center 2xl:gap-12 gap-4 2xl:pt-24 xl:pt-16 lg:pt-9 pt-8 2xl:px-32  lg:px-10 px-5">
         <div>
-          <div class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block">
-            <div class="">
+          <div class="relative 2xl:p-6 p-5 rounded-[50px] inline-block overflow-hidden">
+            <!-- Static Border -->
+            <div class="absolute inset-0 rounded-[50px] border-2 border-white/20 pointer-events-none"></div>
+
+            <!-- Moving Line Border (sirf border par, content se chipke na) -->
+            <div class="absolute inset-[2px] rounded-[48px] animated-border pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 rounded-[50px]">
               <img src="./assets/img/4thtoy1.png" class="h-auto" alt="">
             </div>
           </div>
+
           <div>
             <div class="2xl:pt-7 pt-3">
               <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading-6 font-normal text-white">SENSEIMINT</h1>
@@ -876,11 +885,18 @@
           </div>
         </div>
         <div>
-          <div class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative md:mt-0 mt-3">
-            <div class="">
+          <div
+            class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative md:mt-0 mt-3 overflow-hidden">
+
+            <!-- Moving Line Border -->
+            <div class="animated-border pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-10">
               <img src="./assets/img/4thtoy2.png" alt="">
             </div>
           </div>
+
           <div>
             <div class="2xl:pt-7 pt-3">
               <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading- font-normal text-white">WHISPERMANCER</h1>
@@ -891,11 +907,18 @@
           </div>
         </div>
         <div>
-          <div class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3">
-            <div class="">
+          <div
+            class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3 overflow-hidden">
+
+            <!-- Moving Line Border -->
+            <div class="animated-border pointer-events-none"></div>
+
+            <!-- Content -->
+            <div class="relative z-10">
               <img src="./assets/img/4thtoy3.png" alt="">
             </div>
           </div>
+
           <div>
             <div class="2xl:pt-7 pt-3">
               <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading- font-normal text-white">KODEKAGE</h1>
@@ -1348,6 +1371,7 @@
       flowers.forEach((el) => observer.observe(el));
     });
   </script>
+
 
 
 
