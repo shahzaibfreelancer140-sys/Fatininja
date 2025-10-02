@@ -4,1371 +4,659 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body class="overflow-x-hidden">
-  <nav class="text-white flex justify-between items-center 
-  2xl:px-24 lg:px-10 md:px-8 px-5 
-  2xl:pt-12 lg:pt-7 md:pt-6 pt-4 
-  absolute z-50 w-full">
-
-    <!-- Logo -->
-    <div>
-      <img src="./assets/img/logo.png" alt="">
-    </div>
-
-    <!-- Desktop Navigation Links -->
-    <ul class="hidden lg:flex 2xl:gap-16 lg:gap-8 md:gap-6 text-[#ffffff]/70">
-      <ul class="flex gap-10">
-        <li>
-          <a href="index.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
-            Home
-            <span
-              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="About.us.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
-            About
-            <span
-              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="single blog page.html" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
-            Blog
-            <span
-              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="text-base font-normal leading-6 relative group hover:text-[#D3ED05]">
-            Contact
-            <span
-              class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#D3ED05] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-      </ul>
-
-    </ul>
-
-    <!-- Desktop Button -->
-    <div
-      class="hidden lg:block py-2 px-5 rounded-lg bg-[#D3ED05] hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
-      <button class="text-base font-semibold leading-6 text-black">
-        Explore NFTs
-      </button>
-    </div>
-
-
-    <!-- Mobile Toggle Button -->
-    <button id="menu-toggle" class="lg:hidden flex flex-col gap-1">
-      <span class="w-6 h-[2px] bg-white block transition-all"></span>
-      <span class="w-6 h-[2px] bg-white block transition-all"></span>
-      <span class="w-6 h-[2px] bg-white block transition-all"></span>
-    </button>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-      class="hidden absolute top-full left-0 w-full backdrop-blur-md flex-col items-center py-6 space-y-6">
-      <ul class="flex flex-col gap-6 text-center text-[#ffffff]/70">
-        <li><a href="index.html" class="text-base font-normal leading-6">Home</a></li>
-        <li><a href="About.us.html" class="text-base font-normal leading-6">About</a></li>
-        <li><a href="single blog page.html" class="text-base font-normal leading-6">Blog</a></li>
-        <li><a href="" class="text-base font-normal leading-6">Contact</a></li>
-      </ul>
-      <div class="flex justify-center">
-        <div
-          class="py-2 px-5 rounded-lg bg-[#D3ED05] hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
-          <button class="text-base font-semibold leading-6 text-black">
-            Explore NFTs
-          </button>
-        </div>
+<body>
+  <nav>
+    <div class="flex justify-between items-center 2xl:px-36 lg:px-10 px-5 py-4">
+      <!-- Logo -->
+      <div>
+        <h1 class="2xl:text-2xl lg:text-xl leading-8 font-bold">UNIGESTA SA</h1>
       </div>
-    </div>
+
+      <!-- Desktop Menu (lg and above) -->
+      <ul class="hidden lg:flex gap-11">
+        <li class="text-[#D7B242] 2xl:text-2xl text-lg leading-5 font-normal"><a href="./privacy and policy.html">Accueil</a></li>
+        <li class="text-[#657381] 2xl:text-2xl text-lg leading-5 font-normal"><a href="">Services</a></li>
+        <li class="text-[#657381] 2xl:text-2xl text-lg leading-5 font-normal"><a href="">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Button (lg and above) -->
+      <div class="hidden lg:block bg-[#D7B242] rounded-md py-2 px-4">
+        <button class="2xl:text-base text-xs leading-5 font-normal">022 809 03 10</button>
+      </div>
+      <!-- Mobile + MD Toggle -->
+      <div class="lg:hidden relative">
+        <button id="menu-toggle" class="p-2">
+          <!-- Hamburger Icon -->
+          <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+
+          <!-- Close Icon (hidden by default) -->
+          <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black hidden" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Mobile/MD Menu -->
+        <ul id="mobile-menu" class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg hidden">
+          <li class="text-[#D7B242] text-xs leading-5 font-normal border-b border-gray-200">
+            <a href="" class="block px-4 py-2">Accueil</a>
+          </li>
+          <li class="text-[#657381] text-xs leading-5 font-normal border-b border-gray-200">
+            <a href="" class="block px-4 py-2">Services</a>
+          </li>
+          <li class="text-[#657381] text-xs leading-5 font-normal">
+            <a href="" class="block px-4 py-2">Contact</a>
+          </li>
+          <li class="bg-[#D7B242] rounded-md my-2 mx-2 text-center">
+            <button class="text-xs leading-5 font-normal w-full py-1">022 809 03 10</button>
+          </li>
+        </ul>
+      </div>
   </nav>
 
 
-  <section style="background-image: url(./assets/img/herosectionbg.png);"
-    class="bg-no-repeat bg-cover h-[1406px] w-full bg-center relative">
+  <section style="background-image: url('./assets/img/Section.png');"
+    class="bg-cover bg-center bg-no-repeat w-full 2xl:h-[1080px] xl:h-[809px] lg:h-[577px] h-[480px]">
+
+    <div class="flex justify-center 2xl:pt-80 xl:pt-52 lg:pt-32 md:pt-28 pt-5 2xl:px-4 lg:px-10 px-5">
+      <div>
+        <div>
+          <h1 class="2xl:text-6xl xl:text-5xl text-4xl 2xl:leading-[66px] xl:leading-[50px] font-bold text-white">
+            UNIGESTA SA</h1>
+        </div>
+        <div class="pt-2">
+          <h2
+            class="2xl:text-[42px] xl:text-3xl text-xl 2xl:leading-[48px] xl:leading-[45px] lg:leading-8 leading-8 font-normal text-[#FAFAFA]/90">
+            Votre
+            Partenaire de Confiance en <br class="lg:block hidden">
+            Gestion d'Assurances</h2>
+        </div>
+        <div class="2xl:pt-6 pt-3">
+          <p
+            class="2xl:text-xl xl:text-base text-xs 2xl:leading-8 xl:leading-7 lg:leading-5 leading-6 font-normal text-[#FAFAFA]/80">
+            Au service de Carouge et
+            du Grand Genève depuis
+            2007 avec <br class="lg:block hidden">
+            des solutions d'assurance personnalisées et des conseils <br class="lg:block hidden">
+            d'experts en qui vous pouvez avoir confiance.</p>
+        </div>
+        <div class="2xl:pt-8 lg:pt-3 pt-4 lg:flex md:grid grid-cols-2 gap-4 items-center">
+          <div class="bg-[#D7B242] inline-block 2xl:py-4 py-2 2xl:px-8 px-3 rounded-md">
+            <button class="2xl:text-sm text-xs 2xl:leading-7 leading-5 font-normal">Contactez-nous pour une Consultation
+              Personnalisée</button>
+          </div>
+          <div class="md:flex-col flex justify-center">
+            <div
+              class=" border-2 border-[#FAFAFA]/20 2xl:py-4 py-2 2xl:px-8 px-3 rounded-md lg:mt-0 md:mt-0 mt-3 inline-block">
+              <button class="2xl:text-base text-xs 2xl:leading-7 leading-0 font-normal text-[#FCFBF8]">En Savoir Plus
+                sur Nos
+                Services</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>
-    <div class="text-center absolute z-20 w-full 2xl:pt-32 pt-24 lg:px-10 px-5 top-0">
-      <div>
-        <h1
-          class="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-[56px] text-2xl font-normal text-white -tracking-[-2px] leading-[100%] animate two">
+    <div class="bg-[#F6F5F3] pt-20 pb-20 2xl:px-36 lg:px-10 px-5">
+      <div class="text-center">
+        <div>
+          <h1 class="2xl:text-3xl xl:text-4xl md:text-3xl text-2xl leading-9 font-bold">À Propos d'UNIGESTA SA</h1>
+        </div>
+        <div class="pt-5">
+          <p class="2xl:text-sm xl:text-sm text-xs 2xl:leading-7 leading-6 font-normal text-[#657381]">Fondée en 2007,
+            UNIGESTA SA fournit des services
+            indépendants de courtage et de gestion <br class="lg:block hidden">
+            d'assurances avec un accent sur un service sur mesure et fiable pour nos clients dans toute la <br
+              class="lg:block hidden">
+            région de Genève.</p>
+        </div>
+        <div class="pt-8">
+          <p class="2xl:text-sm xl:text-sm text-xs 2xl:leading-7 leading-6 font-normal text-[#657381]">Sous la direction
+            expérimentée d'Olivier Marrone, nous
+            combinons des décennies d'expertise industrielle <br class="lg:block hidden">
+            avec une touche personnelle, garantissant que chaque client reçoit l'attention et les solutions
+            personnalisées <br class="lg:block hidden">
+            qu'il mérite.</p>
+        </div>
+      </div>
+      <div class="pt-16 lg:flex md:grid md:grid-cols-2 justify-center 2xl:gap-8 lg:gap-5 gap-y-10">
+        <div class="flex justify-center">
+          <div class="bg-white rounded-lg 2xl:py-6 lg:py-4 py-6 2xl:px-9 lg:px-6 px-9 inline-block text-center">
+            <div class="flex justify-center">
+              <img src="./assets/img/fondee.png" alt="">
+            </div>
+            <div class="pt-4">
+              <h1 class="2xl:text-2xl xl:text-xl lg:text-base text-lg 2xl:leading-7 lg:leading-4 leading-7 font-bold">
+                Fondée en 2007</h1>
+            </div>
+            <div class="pt-2">
+              <p class="2xl:text-base xl:text-sm lg:text-xs text-sm 2xl:leading-6 lg:leading-4 leading-6 font-normal">
+                Plus
+                de 15 ans de service de <br>
+                confiance à Genève</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center 2xl:pt-0 md:pt-0 pt-3">
+          <div class="bg-white rounded-lg 2xl:py-6 lg:py-4 py-6 2xl:px-8 lg:px-6 px-8 inline-block text-center">
+            <div class="flex justify-center">
+              <img src="./assets/img/people.png" alt="">
+            </div>
+            <div class="pt-4">
+              <h1 class="2xl:text-2xl xl:text-xl lg:text-base text-lg 2xl:leading-7 lg:leading-4 leading-7 font-bold">
+                Approche Personnelle</h1>
+            </div>
+            <div class="pt-2">
+              <p class="2xl:text-base xl:text-sm lg:text-xs text-sm 2xl:leading-6 lg:leading-4 leading-6 font-normal">
+                Attention dédiée aux besoins <br>
+                uniques de chaque client</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center 2xl:pt-0 md:pt-0 pt-3">
+          <div class="bg-white rounded-lg 2xl:py-6 lg:py-4 py-6 2xl:px-9 xl:px-8 lg:px-6 px-9 inline-block text-center">
+            <div class="flex justify-center">
+              <img src="./assets/img/bach.png" alt="">
+            </div>
+            <div class="pt-4">
+              <h1 class="2xl:text-2xl xl:text-xl lg:text-base text-lg 2xl:leading-7 lg:leading-4 leading-7 font-bold">
+                Leadership Expert</h1>
+            </div>
+            <div class="pt-2">
+              <p class="2xl:text-base xl:text-sm lg:text-xs text-sm 2xl:leading-6 lg:leading-4 leading-6 font-normal">
+                Olivier Marrone apporte son <br>
+                expertise pratique</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center 2xl:pt-0 md:pt-0 pt-3">
+          <div class="bg-white rounded-lg 2xl:py-6 lg:py-4 py-6 2xl:px-6 lg:px-4 px-6 inline-block text-center">
+            <div class="flex justify-center">
+              <img src="./assets/img/service.png" alt="">
+            </div>
+            <div class="pt-4">
+              <h1 class="2xl:text-2xl xl:text-xl lg:text-base text-lg 2xl:leading-7 lg:leading-4 leading-7 font-bold">
+                Service Fiable</h1>
+            </div>
+            <div class="pt-2">
+              <p class="2xl:text-base xl:text-sm lg:text-xs text-sm 2xl:leading-6 lg:leading-4 leading-6 font-normal">
+                Gestion d'assurance cohérente <br>
+                et fiable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- UNMASK THE -->
-          <span>U</span><span>N</span><span>M</span><span>A</span><span>S</span><span>K</span>
-          <span>T</span><span>H</span><span>E</span>
-          <br>
-
-          <!-- FUTURE -->
-          <span>F</span><span>U</span><span>T</span><span>U</span><span>R</span><span>E</span>
-
-          <!-- OF -->
-          <span>O</span><span>F</span>
-
-          <!-- NFTS -->
-          <span>N</span><span>F</span><span>T</span><span>S</span>
-        </h1>
-
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            Collect,
-            trade, and stealth mint exclusive masked ninja nfts in <br class="md:block hidden"> the shadows of the
-            blockchain.</p>
+  <section>
+    <div class="2xl:px-36 lg:px-10 px-5 2xl:pt-20 pt-10 2xl:pb-20 pb-10 bg-white">
+      <div class="text-center">
+        <div>
+          <h1 class="2xl:text-[28px]  text-2xl leading-9 font-bold">Nos Services</h1>
+        </div>
+        <div class="pt-5">
+          <p class="2xl:text-sm text-xs md:leading-6 leading-7 font-normal">Nous offrons une gamme complète de services
+            d'assurance
+            et
+            financiers, chacun <br class="lg:block hidden">
+            adapté pour répondre à vos besoins et circonstances spécifiques.</p>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-3 md:grid grid-cols-2 2xl:gap-8 xl:gap-7 gap-4 2xl:pt-16 pt-8">
+        <div class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances Personnelles
+                </h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">Couverture
+                  complète pour vos <br>
+                  besoins en habitation, auto, santé <br>
+                  et responsabilité civile.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div
-          class="2xl:py-3 lg:py-2 py-2 2xl:px-6 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block mt-6 hover:shadow-[0_0_25px_#D3ED05] transition duration-300 ease-in-out">
-          <button class="2xl:text-base xl:text-base lg:text-xs text-xs font-semibold leading-6 text-black">
-            Explore NFTs
-          </button>
+          class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex lg:mt-0 md:mt-0 mt-3">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/tab.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances Entreprises
+                </h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">Solutions
+                  de responsabilité <br>
+                  professionnelle, propriété et <br>
+                  couverture commerciale pour les <br> entreprises. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex lg:mt-0 md:mt-0 mt-3">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/ani.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Planification de
+                  Retraite</h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">
+                  Planification stratégique de la <br>
+                  retraite et optimisation des <br>
+                  pensions pour votre sécurité future.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div
+          class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex lg:mt-0 md:mt-0 mt-3">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/clentder.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Évaluation des Risques
+                </h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">Évaluation
+                  et analyse approfondies
+                  <br>
+                  des risques potentiels pour vos <br>
+                  actifs et votre entreprise.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex lg:mt-0 md:mt-0 mt-3">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/arrow.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Conseils en Financement
+                </h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">Orientation
+                  experte sur la <br>
+                  planification financière liée aux <br>
+                  assurances et les stratégies <br> d'investissement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FCFCFC] rounded-lg border-2 border-[#ECEAE6] flex lg:mt-0 md:mt-0 mt-3">
+          <div class="flex 2xl:gap-4 lg:gap-2 gap-4">
+            <div>
+              <div>
+                <img src="./assets/img/call.png" class="2xl:w-14 xl:w-12 w-10" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Gestion des Sinistres
+                </h1>
+              </div>
+              <div class="2xl:pt-3 pt-1">
+                <p class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-7 font-normal">Soutien
+                  professionnel et <br>
+                  accompagnement tout au long du <br>
+                  processus de réclamation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
 
   <section>
+    <div class="bg-[#f7f7f5] 2xl:px-36 lg:px-10 px-5 pt-20 2xl:pb-20 pb-10 w-full">
+      <div class="text-center">
+        <div>
+          <h1 class="2xl:text-[28px] text-xl 2xl:leading-9 leading-7 font-bold">Pourquoi Choisir UNIGESTA SA</h1>
+        </div>
+        <div class="2xl:pt-5 pt-3">
+          <p class="2xl:text-sm text-xs 2xl:leading-7 md:leading-6 leading-5 font-normal">Notre engagement envers
+            l'excellence, le service
+            personnalisé et l'expertise <br class="lg:block hidden">
+            industrielle approfondie nous distingue dans le domaine de la gestion d'assurance.</p>
+        </div>
+      </div>
+      <div class="lg:flex justify-around items-center pt-16">
+        <div class="">
+          <div class="flex gap-4 lg:pt-0 pt-10">
+            <div>
+              <img src="./assets/img/circle tik.png" class="2xl:w-full lg:w-10 md:w-10 w-20" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Historique
+                  Prouvé</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal">Plus de 15 ans de
+                  service cohérent et fiable avec un accent sur
+                  la <br class="lg:block md:block hidden">
+                  satisfaction client et les résultats réussis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/circleheart.png" class="2xl:w-full md:w-10 w-28" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Touche
+                  Personnelle</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal">Nous prenons le temps de
+                  comprendre votre situation unique et <br class="lg:block md:block hidden">
+                  fournissons des solutions personnalisées qui correspondent à votre style <br
+                    class="lg:block hidden">de vie.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/light.png" class="2xl:w-full md:w-10 w-28" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">
+                  Connaissance Experte</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal">Une expertise
+                  industrielle approfondie et une formation continue <br class="lg:block md:block hidden">
+                  garantissent que vous recevez les conseils les plus actuels et efficaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/dg.png" class="2xl:w-full md:w-10 w-28" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Partenariat
+                  à Long Terme</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal">Nous construisons des
+                  relations durables, vous soutenant à travers les <br class="lg:block md:block hidden">
+                  changements de vie et l'évolution des besoins d'assurance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:pt-0 pt-10">
+          <div class="bg-white 2xl:p-8 p-4 text-center rounded-2xl">
+            <div class="inline-block">
+              <img src="./assets/img/heartt.png" class="2xl:w-full xl:w-14 md:w-10 w-16" alt="">
+            </div>
+            <div class="pt-6">
+              <h1 class="2xl:text-2xl xl:text-2xl text-xl 2xl:leading-9 leading-5 font-bold">Fondé sur la Confiance</h1>
+            </div>
+            <div class="inline-block pt-4">
+              <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal">"Chez UNIGESTA SA, nous
+                comprenons que l'assurance, c'est plus <br class="lg:block md:block hidden">
+                que des polices— c'est la tranquillité d'esprit. Nos clients nous font <br
+                  class="lg:block md:block hidden">
+                confiance pour protéger ce qui compte le plus pour eux, et nous <br class="lg:block md:block hidden">
+                honorons cette confiance chaque jour."</p>
+            </div>
+            <div class=" pt-6">
+              <h2 class="text-[#D7B242] text-sm leading-6 font-normal">— Olivier Marrone, Fondateur</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-[#192634] 2xl:px-36 lg:px-10 px-5 pt-20 pb-20">
+      <div class="text-center text-white">
+        <div>
+          <h1 class="2xl:text-[28px] text-xl 2xl:leading-9 leading-7 font-bold">Contactez-nous</h1>
+        </div>
+        <div class="2xl:pt-5 pt-3">
+          <p class="2xl:text-sm text-xs 2xl:leading-7 md:leading-6 leading-5 font-normal text-[#FAFAFA]/80">Prêt à
+            discuter de vos besoins
+            d'assurance? Nous sommes là pour fournir<br class="lg:block hidden">
+            des conseils personnalisés et une expertise adaptée à votre situation.</p>
+        </div>
+      </div>
+      <div class="lg:flex justify-center gap-96 2xl:pt-16 pt-9 text-white">
+        <div class="">
+          <div class="flex gap-4 ">
+            <div>
+              <img src="./assets/img/location.png" class="2xl:w-full md:w-10 w-12" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Adresse</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal text-[#FAFAFA]/80">Rue de
+                  la Filature 42
+                  <br class="lg:block md:block hidden">
+                  1227 Carouge (Genève) <br class="lg:block md:block hidden">Suisse
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/call2.png" class="2xl:w-full md:w-10 w-11" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Téléphone
+                </h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal text-[#FAFAFA]/80">022
+                  809 03 10</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/mailbx.png" class="2xl:w-full md:w-10 w-11" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">
+                  Email</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal text-[#FAFAFA]/80">
+                  info@unigesta.ch</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 pt-8">
+            <div>
+              <img src="./assets/img/clockq.png" class="2xl:w-full md:w-10 w-14" alt="">
+            </div>
+            <div>
+              <div>
+                <h1 class="2xl:text-2xl xl:text-2xl  lg:text-base text-xl 2xl:leading-9 leading-5 font-bold">Heures
+                  d'Ouverture</h1>
+              </div>
+              <div class="pt-2">
+                <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal text-[#FAFAFA]/80">Lundi
+                  - Vendredi: 8h30 - 17h30 <br class="lg:block md:block hidden">
+                  Samedi: Sur rendez-vous</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:pt-0 pt-10">
+          <div class="bg-[#FAFAFA]/5 border border-[#989898]/20 2xl:p-8 p-4 rounded-2xl">
+            <div class="pt-6">
+              <h1 class="2xl:text-2xl xl:text-2xl text-xl 2xl:leading-9 leading-5 font-bold">FPlanifiez Votre
+                Consultation</h1>
+            </div>
+            <div class="inline-block pt-4">
+              <p class="2xl:text-lg xl:text-base text-xs 2xl:leading-6 leading-5 font-normal text-[#FAFAFA]/80">Faites
+                le premier pas vers
+                une meilleure protection d'assurance. <br class="lg:block md:block hidden">
+                Contactez-nous aujourd'hui pour une consultation personnalisée où nous <br
+                  class="lg:block md:block hidden">
+                évaluerons vos besoins et recommanderons les meilleures solutions <br class="lg:block md:block hidden">
+                pour votre situation.</p>
+            </div>
+            <div class="bg-[#D7B242] px-8 py-3 mt-6 rounded-md text-center">
+              <button class="text-sm leading-5 font-normal">Appelez 022 809 03 10</button>
+            </div>
+            <div class=" mt-4 border-2 border-[#FAFAFA]/20 px-8 py-3 rounded-md text-center">
+              <button class="text-sm leading-5 font-normal text-white">Envoyer un Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     <div
-      class="w-full lg:flex md:grid grid-cols-2 justify-center items-center absolute 2xl:top-[524px] lg:top-96 top-72 gap-6 lg:px-10 px-5">
-      <div class="md:text-start text-center">
-        <div class="border-2 border-white/20 py-3 px-2 rounded-[50px] inline-block relative">
-          <div class="">
-            <img src="./assets/img/bgblacktoy.png" alt="">
-          </div>
-          <div class="flex justify-center">
-            <div
-              class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-60 xl:top-60 lg:top-60 top-60 w-[86%]">
-              <div class="">
-                <div>
-                  <p class="2xl:text-base xl:text-base lg:text-xs  leading-6 font-normal text-white">Rarity Score:</p>
-                </div>
-                <div>
-                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                    8.7/10</h1>
-                </div>
-              </div>
-              <div class="h-12 w-12 rounded-full bg-[#D3ED05] inline-block flex justify-center">
-                <button><i class="fa-solid fa-arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="lg:text-start">
-          <div class="2xl:pt-6 lg:pt-3 pt-2 ">
-            <h1 class="2xl:text-2xl text-xl leading-8 font-normal text-white">
-              🧩 shadowfang #1729
+      class="bg-white 2xl:px-36 lg:px-10 px-5 2xl:pt-12 pt-6 lg:flex justify-center 2xl:gap-60 xl:gap-16 gap-20 lg:text-start text-center ">
+      <div class="lg:flex gap-8">
+        <div>
+          <div>
+            <h1 class="2xl:text-3xl xl:text-2xl text-xl 2xl:leading-8 leading-6 font-bold text-[#192634]">UNIGESTA SA
             </h1>
           </div>
-          <div class="pt-2">
-            <p class="2xl:text-xl text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white">
-              Never reflects light—and his presence <br class="md:block hidden"> is felt only after it’s too late.
+          <div class="pt-4">
+            <p class="2xl:text-2xl xl:text-xl text-xs 2xl:leading-7 leading-5 font-normal text-[#657381]">Courtage et
+              gestion d'assurance indépendante au <br class="lg:block hidden">
+              service de Genève depuis 2007.</p>
+          </div>
+          <div class="2xl:pt-4 pt-2">
+            <p class="2xl:text-xl xl:text-lg text-xs 2xl:leading-6 leading-5 font-normal text-[#657381]">Rue de la
+              Filature 42 <br class="lg:block hidden">1227 Carouge (Genève)
+              <br>Suisse
             </p>
           </div>
         </div>
+        <div>
+          <div>
+            <h1 class="text-[#192634] 2xl:text-3xl xl:text-2xl text-xl leading-8 font-bold">Nos Services</h1>
+          </div>
+          <ul class="pt-4">
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal ">Assurances Personnelles</li>
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal pt-2">Assurances Entreprises</li>
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal pt-2">Planification de Retraite</li>
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal pt-2">Évaluation des Risques</li>
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal pt-2">Conseils en Financement</li>
+            <li class="text-[#657381] 2xl:text-2xl xl:text-xl text-sm font-normal pt-2">Gestion des Sinistres</li>
+          </ul>
+        </div>
       </div>
-
       <div>
-        <img src="./assets/img/ctoyimg.png" class="" alt="">
-      </div>
-      <div class="">
-        <div
-          class="bg-gradient-to-r from-black/15 to-black/0 rounded-3xl 2xl:pt-10 lg:pt-5 pt-9 2xl:pb-16 lg:pb-8 pb-7 2xl:px-11 lg:px-5 px-5 text-white lg:mt-0 mt-2">
-
-          <!-- Counter 1 -->
-          <div class="pt-2">
-            <h1
-              class="counter 2xl:text-[40px] xl:text-3xl text-xl 2xl:leading-[56px] lg:leading-8 leading-6 font-normal"
-              data-target="500">0+</h1>
-          </div>
-          <div>
-            <p class="2xl:text-xl xl:text-lg lg:text-xs text-base leading-7 font-normal lg:pt-2 pt-1">Unique masked
-              ninja NFTs</p>
-          </div>
-
-          <!-- Counter 2 -->
-          <div class="2xl:pt-10 lg:pt-6 pt-5">
-            <h1
-              class="counter 2xl:text-[40px] xl:text-3xl text-xl 2xl:leading-[56px] lg:leading-8 leading-6 font-normal"
-              data-target="48">0hours</h1>
-          </div>
-          <div>
-            <p class="2xl:text-xl xl:text-lg lg:text-xs text-base leading-7 font-normal lg:pt-2 pt-1">Sold Out during
-              presale launch</p>
-          </div>
-
-          <!-- Counter 3 -->
-          <div class="2xl:pt-10 lg:pt-6 pt-5">
-            <h1
-              class="counter 2xl:text-[40px] xl:text-3xl text-xl 2xl:leading-[56px] lg:leading-8 leading-6 font-normal"
-              data-target="6.5">0%</h1>
-          </div>
-          <div>
-            <p class="2xl:text-xl xl:text-lg lg:text-xs text-base leading-7 font-normal lg:pt-2 pt-1">Royalty Fee
-              Breakdown</p>
-          </div>
+        <div class="lg:pt-0 pt-3">
+          <h1 class="2xl:text-3xl xl:text-2xl text-xl 2xl:leading-8 leading-6 font-bold text-[#192634]">Contact</h1>
+        </div>
+        <div class="pt-4">
+          <p class="2xl:text-2xl xl:text-xl text-sm leading-7 font-normal text-[#657381]">Tél: 022 809 03 10</p>
+        </div>
+        <div class="pt-2">
+          <p class="2xl:text-xl xl:text-xl text-sm leading-7 font-normal text-[#657381]">Email: info@unigesta.ch</p>
+        </div>
+        <div class="pt-2">
+          <p class="2xl:text-xl xl:text-xl text-sm leading-7 font-normal text-[#657381]">Lundi - Vendredi: 8h30 - 17h30
+            <br>
+            Samedi: Sur rendez-vous</p>
+        </div>
+        <div class="2xl:pt-4 pt-2">
+          <p class="2xl:text-xl xl:text-xl text-sm leading-6 font-normal text-[#657381]">Rue de la Filature 42 <br>1227
+            Carouge
+            (Genève)
+            <br>Suisse
+          </p>
         </div>
       </div>
     </div>
-  </section>
-
-
-  <section class="bg-no-repeat bg-cover bg-center w-full"
-    style="background-image: url(./assets/img/blackbackground.png);">
-
-
-
-    <section>
-      <div class="text-center 2xl:pt-[158px] md:pt-12 pt-64 2xl:px-36 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">About nftninja</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[55px] lg:text-[39px] md:text-[39px] text-xs 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            NFTNINJA IS A LIMITED COLLECTION <br class="2xl:block lg:hidden hidden"><span class="text-white/40">OF
-              5,000</span><br class="lg:block md:block hidden"><span class="text-white/40">WARRIORS.</span>
-          </h1>
-        </div>
-
-        <div class="w-full lg:flex md:grid grid-cols-2 justify-center items-center gap-6 relative 2xl:pt-36 pt-8">
-
-          <!-- Red Tag (Floating Animation) -->
-          <div class="absolute 2xl:left-12 lg:-left-8 2xl:top-16 lg:-top-5 lg:block hidden floating">
-            <img src="./assets/img/redtag.png" class="2xl:w-full lg:w-32" alt="">
-          </div>
-
-          <!-- Card 1 -->
-          <div
-            class="card border-2 border-white/20 2xl:py-2 py-0 2xl:px-2 px-0 rounded-[50px] inline-block relative transition-transform duration-500 hover:rotate-3">
-            <div>
-              <img src="./assets/img/seccard1.png" class="h-auto" alt="">
-            </div>
-            <div class="flex justify-center">
-              <div
-                class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-72 top-64 w-[86%]">
-                <div>
-                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
-                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                    8.7/10
-                  </h1>
-                </div>
-                <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
-                  <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="card border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2 rounded-[50px] inline-block relative md:mt-0 mt-3 transition-transform duration-500 hover:rotate-3">
-            <div>
-              <img src="./assets/img/seccard2.png" alt="">
-            </div>
-            <div class="flex justify-center">
-              <div
-                class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-[296px] top-[275px] w-[86%]">
-                <div>
-                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
-                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                    8.7/10
-                  </h1>
-                </div>
-                <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
-                  <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="card border-2 border-white/20 2xl:py-5 py-3 2xl:px-5 px-2 rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3 transition-transform duration-500 hover:rotate-3">
-            <div>
-              <img src="./assets/img/seccard3.png" alt="">
-            </div>
-            <div class="flex justify-center">
-              <div
-                class="bg-black/50 rounded-3xl border border-[#ffffff]/50 px-5 py-3 flex justify-between items-center absolute 2xl:top-[407px] xl:top-96 lg:top-60 md:top-[296px] top-[275px] w-[86%]">
-                <div>
-                  <p class="2xl:text-base xl:text-base lg:text-xs leading-6 font-normal text-white">Rarity Score:</p>
-                  <h1 class="2xl:text-xl xl:text-xl lg:text-base leading-8 font-normal pt-1 text-white text-start">
-                    8.7/10
-                  </h1>
-                </div>
-                <div class="2xl:h-16 h-14 2xl:w-16 w-14 rounded-full bg-[#D3ED05] inline-block flex justify-center">
-                  <button><i class="fa-solid fa-arrow-right 2xl:text-xl text-lg"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Perettag (Floating Animation) -->
-          <div class="absolute 2xl:right-0 -right-9 2xl:top-4 -top-10 lg:block hidden floating">
-            <img src="./assets/img/perettag.png" class="2xl:w-full lg:w-32" alt="">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <section>
-      <div class="text-center 2xl:pt-48 md:pt-12 pt-4 2xl:px-36 lg:px-10 px-5">
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-xs 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            <span class="text-white/40">EACH NINJA IS UNIQUELY </span><br class="2xl:block lg:hidden md:hidden"><span
-              class="text-white/40">CRAFTED </span>WITH RARE TRAITS AND<br class="">HIDDEN POWER.
-          </h1>
-        </div>
-      </div>
-      <div class="text-center 2xl:pt-48 lg:pt-20 md:pt-12 pt-4 2xl:px-36 xl:px-28 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">FEATURES</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            UNLOCK THE PERKS
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            A stealth-crafted ecosystem built for sustainability, utility, and <br class="lg:block hidden"> long-term
-            holder value.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div
-        class="w-full lg:flex md:grid grid-cols-2 justify-center gap-12 2xl:px-36 lg:px-10 px-5 text-white 2xl:pt-24 pt-8 overflow-hidden">
-        <div>
-          <!-- Top Left -->
-          <div
-            class="animate-card from-top-left bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
-              COLLECTIBLE AND <br class="lg:block hidden"> UNIQUE NINJAS
-            </h1>
-            <p
-              class="pt-3 2xl:text-xl xl:text-base text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-              Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
-              weapons, and skills.
-            </p>
-            <img src="./assets/img/4card1.png" alt="">
-          </div>
-
-          <!-- Bottom Left -->
-          <div
-            class="animate-card from-bottom-left bg-[#04141C] 2xl:pt-12 pt-6 2xl:px-11 px-6 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
-              COMMUNITY <br class="lg:block hidden"> POWERED DAO
-            </h1>
-            <p class="pt-3 2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-              The more your ninja, the more rewards and special <br class="2xl:block hidden"> access you unlock.
-            </p>
-            <img src="./assets/img/4card3.png" alt="">
-          </div>
-        </div>
-
-        <div class="lg:pt-0 md:pt-0 pt-3">
-          <!-- Top Right -->
-          <div
-            class="animate-card from-top-right bg-[#04141C] 2xl:py-12 py-6 2xl:px-10 px-5 rounded-[50px] 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
-              STAKING AND $SHADOW <br class="lg:block hidden"> REWARDS
-            </h1>
-            <p class="pt-3 2xl:text-xl xl:text-base 2xl:leading-7 lg:leading-5 leading-5 font-normal text-white/70">
-              Every ninja is one of a kind—crafted with hundreds of <br class="2xl:block hidden"> traits, clans,
-              weapons, and skills.
-            </p>
-            <img src="./assets/img/4card2.png" alt="">
-          </div>
-
-          <!-- Bottom Right -->
-          <div
-            class="animate-card from-bottom-right bg-[#072733] 2xl:pt-12 pt-6 2xl:px-11 px-5 rounded-[50px] 2xl:mt-12 mt-3 2xl:w-[785px] xl:w-[500px] w-[335px]">
-            <h1 class="2xl:text-[44px] xl:text-2xl text-base 2xl:leading-[65px] leading-6 font-normal">
-              READY TO JOIN THE <br class="lg:block hidden"> CLAN?
-            </h1>
-            <p
-              class="pt-3 2xl:text-md xl:text-sm text-xs 2xl:leading-0 lg:leading-5 leading-5 font-normal text-white/70">
-              Start your journey with oftninjas and unlock access to rareninjas and a <br class="2xl:block hidden">
-              powerful Web3 community.
-            </p>
-            <div
-              class="2xl:py-5 lg:py-2 py-2 2xl:px-12 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block 2xl:mt-10 xl:mt-14 lg:mt-4 md:mt-9 mt-5 2xl:mb-24 xl:mb-14 lg:mb-7 mb-8">
-              <button class="2xl:text-xl xl:text-base lg:text-xs text-xs font-semibold leading-6 text-black">Mint Your
-                Ninja</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section>
-      <div class="text-center 2xl:pt-48 lg:pt-20 md:pt-12 pt-4 2xl:px-36 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">nft economy</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            THE SHADOW ECONOMY
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            A stealth-crafted ecosystem built for sustainability, utility, and <br class="lg:block hidden"> long-term
-            holder value.</p>
-        </div>
-      </div>
-
-
-
-      <div class="2xl:pt-12 pt-4 relative">
-        <div class="flex justify-center overflow-hidden overflow-x-hidden">
-          <img src="./assets/img/rotateani.png" class="2xl:w-[974px] xl:w-[800px] lg:w-[600px] md:w-[500px] 
-            2xl:h-[972px] xl:h-[800px] lg:h-[600px] md:h-[500px]
-            animate-spin-slow " alt="">
-        </div>
-
-        <div class="flex justify-center">
-          <div class="absolute top-24 md:top-32 lg:top-32 xl:top-40 2xl:top-60">
-            <div class="relative flex justify-center items-center">
-              <div
-                class="relative -top-20 md:-top-24 xl:-top-44 lg:-top-32 2xl:-top-48 left-10 md:left-14 lg:left-16 xl:left-24">
-                <img src="./assets/img/goolcricle.png" class="w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-full" alt="">
-                <div
-                  class="text-white absolute left-6 md:left-8 xl:left-16 lg:left-12 2xl:left-16 top-8 md:top-10 xl:top-20 lg:top-12 2xl:top-20">
-                  <h1
-                    class="text-xl md:text-3xl xl:text-4xl lg:text-2xl 2xl:text-[55px] leading-7 md:leading-9 lg:leading-8 2xl:leading-[67px] font-normal">
-                    25%
-                  </h1>
-                  <p class="pt-2 text-xs md:text-sm lg:text-sm 2xl:text-base font-semibold text-center">Mint Price</p>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/img/trotate.png" alt="ninja"
-                  class="relative z-10 w-40 md:w-48 lg:w-72 xl:w-96 2xl:w-[420px]">
-              </div>
-              <div
-                class="relative -top-20 md:-top-24 xl:-top-44 lg:-top-32 2xl:-top-48 right-10 md:right-14 lg:right-16 xl:right-24">
-                <img src="./assets/img/goolcricle.png" class="w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-full" alt="">
-                <div
-                  class="text-white absolute left-6 md:left-8 xl:left-16 lg:left-12 2xl:left-16 top-8 md:top-10 xl:top-20 lg:top-12 2xl:top-20">
-                  <h1
-                    class="text-xl md:text-3xl xl:text-4xl lg:text-2xl 2xl:text-[55px] leading-7 md:leading-9 lg:leading-8 2xl:leading-[67px] font-normal">
-                    20%
-                  </h1>
-                  <p class="pt-2 text-xs md:text-sm lg:text-sm 2xl:text-base font-semibold text-center">Mint Price</p>
-                </div>
-              </div>
-              <div
-                class="absolute left-9 md:left-12 xl:left-28 lg:left-20 2xl:left-28 2xl:bottom-0 lg:bottom-2 bottom-0">
-                <div class="relative">
-                  <img src="./assets/img/goolcricle.png" class="w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-full" alt="">
-                  <div
-                    class="text-white absolute left-6 md:left-8 xl:left-12 top-8 md:top-10 2xl:top-20 xl:top-20 lg:top-14">
-                    <div class="flex gap-2 md:gap-3 lg:gap-6 items-end">
-                      <h1
-                        class="text-xl md:text-2xl xl:text-4xl lg:text-2xl 2xl:text-[55px] leading-7 md:leading-8 lg:leading-8 2xl:leading-[67px] font-normal">
-                        4.1</h1>
-                      <h2 class="text-xs md:text-sm lg:text-lg 2xl:text-2xl leading-6 xl:leading-8 font-normal">ETH</h2>
-                    </div>
-                    <p class="pt-2 text-xs md:text-sm lg:text-base xl:text-lg font-semibold text-center">Mint Price</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="absolute right-8 md:right-8 xl:right-20 lg:right-16 2xl:right-20 2xl:bottom-0 lg:bottom-3 bottom-0">
-                <div class="relative">
-                  <img src="./assets/img/goolcricle.png" class="w-28 md:w-36 lg:w-44 xl:w-56 2xl:w-full" alt="">
-                  <div
-                    class="text-white absolute left-6 md:left-8 xl:left-12 2xl:left-16 top-8 md:top-10 lg:top-14 xl:top-20 2xl:top-24">
-                    <div class="flex gap-2 md:gap-3 lg:gap-6 items-end">
-                      <h1
-                        class="text-xl md:text-2xl xl:text-4xl lg:text-2xl 2xl:text-[55px] leading-7 md:leading-8 lg:leading-8 2xl:leading-[67px] font-normal">
-                        10</h1>
-                      <h2 class="text-sm md:text-base lg:text-lg xl:text-2xl leading-6 xl:leading-8 font-normal">NFT
-                      </h2>
-                    </div>
-                    <p class="pt-2 text-xs md:text-sm lg:text-base xl:text-lg font-semibold text-center">Mint Price</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-    </section>
-
-
-    <section>
-      <div class="text-center 2xl:pt-72 xl:pt-60 lg:pt-48 md:pt-20 pt-28 2xl:px-36 xl:px-28 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">HOW TO BUY</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            MINT YOUR NINJA IN 3 STEPS
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            A stealth-crafted ecosystem built for sustainability, utility, and <br class="lg:block hidden"> long-term
-            holder value.</p>
-        </div>
-      </div>
-
-
-      <div
-        class="lg:flex md:grid grid-cols-2 justify-center 2xl:gap-12 gap-6 2xl:px-36 xl:px-28 lg:px-10 px-5 2xl:pt-24 xl:pt-16 lg:pt-12 pt-10">
-        <div class="bg-[#04141C] rounded-[50px] 2xl:p-10 lg:p-8 p-5">
-          <div>
-            <h1 class="text-[#D3ED05] 2xl:text-[56px] text-4xl 2xl:leading-[87px] leading-9 font-normal">01</h1>
-          </div>
-          <div class="2xl:pt-12 lg:pt-9 pt-6">
-            <h1 class="2xl:text-3xl xl:text-xl lg:text-lg text-xl font-normal text-white">CONNECT WALLET</h1>
-          </div>
-          <div class="pt-3">
-            <p
-              class="2xl:text-xl xl:text-base lg:text-sm text-lg 2xl:leading-[45px] leading-6 font-normal text-[#ffffff]/70">
-              Use MetaMask or WalletConnect to connect with NFTNinja.</p>
-          </div>
-        </div>
-        <div class="bg-[#04141C] rounded-[50px] 2xl:p-10 lg:p-8 p-5 lg:mt-0 md:mt-0 mt-3">
-          <div>
-            <h1 class="text-[#D3ED05] 2xl:text-[56px] text-4xl 2xl:leading-[87px] leading-9 font-normal">02</h1>
-          </div>
-          <div class="2xl:pt-12 lg:pt-9 pt-6">
-            <h1 class="2xl:text-3xl xl:text-xl lg:text-lg text-xl font-normal text-white">MINT OR BUY</h1>
-          </div>
-          <div class="pt-3">
-            <p
-              class="2xl:text-xl xl:text-base lg:text-sm text-lg 2xl:leading-[45px] leading-6 font-normal text-[#ffffff]/70">
-              Mint directly during launch or buy on secondary like OpenSea.</p>
-          </div>
-        </div>
-        <div class="bg-[#04141C] rounded-[50px] 2xl:p-10 lg:p-8 p-5 lg:mt-0 md:mt-0 mt-3">
-          <div>
-            <h1 class="text-[#D3ED05] 2xl:text-[56px] text-4xl 2xl:leading-[87px] leading-9 font-normal">03</h1>
-          </div>
-          <div class="2xl:pt-12 pt-6">
-            <h1 class="2xl:text-3xl xl:text-xl lg:text-lg text-xl font-normal text-white">STAKE, COLLECT</h1>
-          </div>
-          <div class="pt-3">
-            <p
-              class="2xl:text-xl xl:text-base lg:text-sm text-lg 2xl:leading-[45px] leading-6 font-normal text-[#ffffff]/70">
-              Start earning rewards, join the clan, and participate in the ecosystem.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section>
-      <div class="text-center 2xl:pt-72 xl:pt-60 lg:pt-48 md:pt-20 pt-28 2xl:px-36 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">ROADMAP</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            THE PATH OF NINJA
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            A stealth-crafted ecosystem built for sustainability, utility, and <br class="lg:block hidden"> long-term
-            holder value.</p>
-        </div>
-      </div>
-      <div class="pt-24 2xl:px-96 xl:px-64 lg:px-20 px-5">
-        <div class="relative w-full ">
-          <div
-            class="absolute -top-6 lg:left-1/2 md:left-[5%] -translate-x-1/2 w-2 md:w-4 lg:w-5 h-[92%] bg-[#052A36] rounded-full lg:block  hidden">
-          </div>
-          <div class="relative flex flex-col justify-start">
-            <div class="block lg:hidden mb-6">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-
-            <div class="w-full lg:w-1/2">
-              <div>
-                <p class="text-[#D3ED05] text-sm leading-6 font-semibold">Phase 1</p>
-              </div>
-              <div class="pt-3">
-                <h1 class="text-xl md:text-2xl 2xl:text-3xl font-normal leading-snug lg:leading-[44px] text-white">
-                  Launch & Mint
-                </h1>
-              </div>
-              <div class="text-white pt-3 space-y-2">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Release of 5,000 unique nftninja
-                    collectibles</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Website, smart contracts, and minting live
-                  </p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Community channels activated</p>
-                </div>
-              </div>
-            </div>
-            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-          </div>
-          <div class="relative flex flex-col lg:flex-row  justify-end mt-10 lg:mt-20">
-            <div class="block lg:hidden mb-6">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-              <img src="./assets/img/stone.png" alt="" class="">
-            </div>
-
-            <div class="w-full lg:w-1/2 flex lg:justify-end ">
-              <div>
-                <p class="text-[#D3ED05] text-sm leading-6 font-semibold">Phase 1</p>
-                <div class="pt-3">
-                  <h1 class="text-xl md:text-2xl 2xl:text-3xl font-normal leading-snug lg:leading-[44px] text-white">
-                    Launch & Mint
-                  </h1>
-                </div>
-                <div class="text-white pt-3 space-y-2">
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Release of 5,000 unique nftninja
-                      collectibles</p>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Website, smart contracts, and minting
-                      live</p>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Community channels activated</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="relative flex flex-col lg:flex-row justify-start mt-10 lg:mt-20">
-            <div class="block lg:hidden mb-6">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-
-            <div class="w-full lg:w-1/2">
-              <div>
-                <p class="text-[#D3ED05] text-sm leading-6 font-semibold">Phase 1</p>
-              </div>
-              <div class="pt-3">
-                <h1 class="text-xl md:text-2xl 2xl:text-3xl font-normal leading-snug lg:leading-[44px] text-white">
-                  Launch & Mint
-                </h1>
-              </div>
-              <div class="text-white pt-3 space-y-2">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Release of 5,000 unique nftninja
-                    collectibles</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6">Website, smart contracts, and minting live</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Community channels activated</p>
-                </div>
-              </div>
-            </div>
-            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-          </div>
-          <div class="relative flex flex-col lg:flex-row justify-end mt-10 lg:mt-20">
-            <div class="block lg:hidden mb-6">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-              <img src="./assets/img/stone.png" alt="" class="">
-            </div>
-
-            <div class="w-full lg:w-1/2 flex lg:justify-end">
-              <div>
-                <p class="text-[#D3ED05] text-sm leading-6 font-semibold">Phase 1</p>
-                <div class="pt-3">
-                  <h1 class="text-xl md:text-2xl 2xl:text-3xl font-normal leading-snug lg:leading-[44px] text-white">
-                    Launch & Mint
-                  </h1>
-                </div>
-                <div class="text-white pt-3 space-y-2">
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Release of 5,000 unique nftninja
-                      collectibles</p>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Website, smart contracts, and minting
-                      live</p>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle text-[6px] "></i>
-                    <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Community channels activated</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="relative flex flex-col lg:flex-row justify-start mt-10 lg:mt-20">
-            <div class="block lg:hidden mb-6">
-              <img src="./assets/img/stone.png" alt="stone" class="">
-            </div>
-
-            <div class="w-full lg:w-1/2">
-              <div>
-                <p class="text-[#D3ED05] text-sm leading-6 font-semibold">Phase 1</p>
-              </div>
-              <div class="pt-3">
-                <h1 class="text-xl md:text-2xl 2xl:text-3xl font-normal leading-snug lg:leading-[44px] text-white">
-                  Launch & Mint
-                </h1>
-              </div>
-              <div class="text-white pt-3 space-y-2">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Release of 5,000 unique nftninja
-                    collectibles</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Website, smart contracts, and minting live
-                  </p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle text-[6px] "></i>
-                  <p class="2xl:text-xl text-xs leading-6 text-[#ffffff]/70">Community channels activated</p>
-                </div>
-              </div>
-            </div>
-            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-              <img src="./assets/img/stone.png" alt="" class="">
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <section>
-      <div class="2xl:pt-24 lg:pt-12 pt-16 overflow-hidden">
-        <div class="relative ">
-          <img src="./assets/img/gren.png" class="relative z-10 2xl:w-full lg:w-full 2xl:h-[838px] object-fill">
-          <img src="./assets/img/green moono.png"
-            class="absolute 2xl:top-28 xl:top-32 lg:top-16 md:top-12 -top-8 2xl:left-[811px] xl:left-[626px] lg:left-[432px] md:left-80 left-32 -translate-x-1/2 2xl:w-80 xl:w-52 lg:w-40 w-28 2xl:h-80 xl:h-52 lg:h-40 h-28 opacity-0 animate-on-scroll"
-            data-delay="0">
-          <div
-            class="absolute bottom-0 2xl:top-60 xl:top-56 lg:top-36 md:top-24 top-6 2xl:left-1/2 xl:left-[512px] lg:left-80 md:left-48 -translate-x-1/2 w-[350px] 2xl:h-48 opacity-0 animate-on-scroll"
-            data-delay="800">
-            <img src="./assets/img/leftbird2.png"
-              class="absolute 2xl:top-5 lg:top-1 top-1 2xl:-left-36 lg:left-28 left-32 2xl:w-20 xl:w-14 lg:w-9 w-7 animate-flap">
-            <img src="./assets/img/singlbird.png"
-              class="absolute 2xl:-top-5 xl:-top-9 -top-5 2xl:-left-12 xl:left-44 left-40 2xl:w-28 xl:w-20 lg:w-16 w-12 animate-flap delay-200">
-            <img src="./assets/img/rightbird.png"
-              class="absolute 2xl:top-5 xl:top-8 lg:top-4 top-1 2xl:left-20 xl:left-60 lg:left-56 left-52 2xl:w-20 xl:w-16 lg:w-12 w-8 animate-flap delay-500">
-            <img src="./assets/img/secondbirdr.png"
-              class="absolute 2xl:top-20 xl:top-12 lg:top-8 top-4 2xl:-left-2 xl:left-44 lg:left-44 left-40 2xl:w-16 xl:w-12 lg:w-8 w-8 animate-flap delay-700">
-            <img src="./assets/img/secondbirdr.png"
-              class="absolute 2xl:-top-8 lg:top-1 -top-3 2xl:left-28 xl:left-72 lg:left-64 left-56 2xl:w-14 xl:w-11 lg:w-7 w-6 animate-flap delay-1000">
-            <img src="./assets/img/smalbird r.png"
-              class="absolute 2xl:top-5 xl:top-9 lg:top-5 top-1 2xl:left-48 xl:left-[336px] lg:left-72 left-64 2xl:w-9 xl:w-9 lg:w-5 w-5 animate-flap delay-1000">
-            <img src="./assets/img/smalbird r.png"
-              class="absolute 2xl:top-14 xl:top-12 lg:top-8 top-6 2xl:left-14 xl:left-56 lg:left-52 left-48 2xl:w-6 xl:w-3 lg:w-3 w-3 animate-flap delay-1000">
-          </div>
-          <div
-            class="absolute z-10 2xl:top-44 xl:-top-24 lg:-top-80 -top-64 2xl:left-10 flex flex-col gap-6 flower-on-scroll"
-            data-delay="500">
-            <img src="./assets/img/flower.png" class="absolute 2xl:top-64 xl:top-[358px] lg:top-[419px] md:top-[400px] top-64 
-              2xl:left-[440px] xl:left-[368px] lg:left-64 md:left-48 left-24 
-              2xl:w-5 lg:w-4 w-2 opacity-0">
-
-            <img src="./assets/img/flower.png" class="absolute 2xl:top-56 xl:top-80 lg:top-[400px] md:top-96 top-60 
-              2xl:left-72 xl:left-64 lg:left-44 md:left-32 left-16 
-              2xl:w-5 w-2 opacity-0">
-
-            <img src="./assets/img/flower.png" class="absolute 2xl:top-48 xl:top-[303px] lg:top-96 md:top-[368px] top-56 
-              2xl:left-64 xl:left-56 lg:left-40 md:left-28 left-11 
-              2xl:w-5 w-2 opacity-0">
-
-            <img src="./assets/img/flower.png" class="relative 2xl:top-44 xl:top-72 md:top-[368px] top-60 
-              2xl:left-0 xl:left-16 md:left-7 left-3 
-              2xl:w-5 w-2 opacity-0">
-          </div>
-
-
-        </div>
-
-
-
-      </div>
-    </section>
-
-    <section>
-      <div class="text-center 2xl:pt-48 xl:pt-48 lg:pt-48 md:pt-20 pt-28 2xl:px-36 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">team</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            meet the team
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            Our team of passionate professionals, ready to bring ideas to<br class="lg:block hidden"> life</p>
-        </div>
-      </div>
-      <div
-        class="w-full lg:flex md:grid grid-cols-2 justify-center items-center 2xl:gap-12 gap-4 2xl:pt-24 xl:pt-16 lg:pt-9 pt-8 2xl:px-32  lg:px-10 px-5">
-        <div>
-          <div class="relative 2xl:p-6 p-5 rounded-[50px] inline-block overflow-hidden">
-            <!-- Static Border -->
-            <div class="absolute inset-0 rounded-[50px] border-2 border-white/20 pointer-events-none"></div>
-
-            <!-- Moving Line Border (sirf border par, content se chipke na) -->
-            <div class="absolute inset-[2px] rounded-[48px] animated-border pointer-events-none"></div>
-
-            <!-- Content -->
-            <div class="relative z-10 rounded-[50px]">
-              <img src="./assets/img/4thtoy1.png" class="h-auto" alt="">
-            </div>
-          </div>
-
-          <div>
-            <div class="2xl:pt-7 pt-3">
-              <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading-6 font-normal text-white">SENSEIMINT</h1>
-            </div>
-            <div class="pt-2">
-              <p class="2xl:text-xl text-xs leading-7 font-normal text-[#ffffff]/70">Founder & Strategist</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative md:mt-0 mt-3 overflow-hidden">
-
-            <!-- Moving Line Border -->
-            <div class="animated-border pointer-events-none"></div>
-
-            <!-- Content -->
-            <div class="relative z-10">
-              <img src="./assets/img/4thtoy2.png" alt="">
-            </div>
-          </div>
-
-          <div>
-            <div class="2xl:pt-7 pt-3">
-              <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading- font-normal text-white">WHISPERMANCER</h1>
-            </div>
-            <div class="pt-2">
-              <p class="2xl:text-xl text-xs leading-7 font-normal text-[#ffffff]/70">Illustrator & Trait Designer</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            class="border-2 border-white/20 2xl:p-6 p-5 rounded-[50px] inline-block relative lg:mt-0 md:mt-0 mt-3 overflow-hidden">
-
-            <!-- Moving Line Border -->
-            <div class="animated-border pointer-events-none"></div>
-
-            <!-- Content -->
-            <div class="relative z-10">
-              <img src="./assets/img/4thtoy3.png" alt="">
-            </div>
-          </div>
-
-          <div>
-            <div class="2xl:pt-7 pt-3">
-              <h1 class="2xl:text-3xl text-xl 2xl:leading-10 leading- font-normal text-white">KODEKAGE</h1>
-            </div>
-            <div class="pt-2">
-              <p class="2xl:text-xl text-xs leading-7 font-normal text-[#ffffff]/70">Lead Blockchain Developer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section>
-      <div class="text-center 2xl:pt-72 xl:pt-48 lg:pt-48 md:pt-20 pt-28 2xl:px-36 lg:px-10 px-5">
-        <div>
-          <p class="2xl:text-base text-xs leading-6 font-semibold text-[#D3ED05]">FAQ</p>
-        </div>
-        <div class="pt-3">
-          <h1
-            class="2xl:text-[56px] xl:text-[54px] lg:text-4xl md:text-3xl text-lg 2xl:leading-[87px] xl:leading-[70px] lg:leading-[55px] md:leading-[50px] leading-5 font-normal text-white">
-            FREQUENTLY ASKED QUESTIONS
-          </h1>
-        </div>
-        <div class="2xl:pt-4 lg:pt-3 pt-2">
-          <p
-            class="2xl:text-xl xl:text-base lg:text-xs md:text-lg text-xs 2xl:leading-7 lg:leading-5 leading-5 font-normal text-[#ffffff]/70">
-            Here are some of the most common queries to help you get <br class="lg:block hidden"> started.</p>
-        </div>
-      </div>
-
-      <div class="bg-[#030E14] text-white flex justify-center items-center 2xl:pt-28 lg:pt-14 pt-9">
-        <div class="w-full 2xl:px-36 lg:px-10 px-5 space-y-7">
-          <div
-            class="accordion rounded-3xl lg:rounded-[30px] 2xl:rounded-[35px] bg-[#081016] border border-[#CFCFCF]/15 overflow-hidden p-4 lg:p-8 2xl:p-10">
-            <button
-              class="accordion-btn w-full flex justify-between items-center text-xs lg:text-2xl xl:text-[28px] 2xl:text-3xl font-semibold leading-6 lg:leading-8 xl:leading-9 2xl:leading-10">
-              What is nftninja?
-              <span
-                class="icon bg-[#D3ED05] text-black rounded-full w-8 h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 flex text-2xl 2xl:text-4xl lg:text-3xl justify-center">+</span>
-            </button>
-            <p
-              class="accordion-content hidden pt-4 lg:pt-6 text-[#ffffff]/70 text-xs 2xl:text-lg leading-7 lg:leading-9 2xl:leading-10">
-              nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. Each ninja
-              is packed with distinct traits, rarity, and hidden utility within the ecosystem.
-            </p>
-          </div>
-          <div
-            class="accordion rounded-3xl lg:rounded-[30px] 2xl:rounded-[35px] bg-[#081016] border border-[#CFCFCF]/15 overflow-hidden p-4 lg:p-8 2xl:p-10">
-            <button
-              class="accordion-btn w-full flex justify-between items-center text-xs lg:text-2xl xl:text-[28px] 2xl:text-3xl font-semibold leading-6 lg:leading-8 xl:leading-9 2xl:leading-10">
-              How can I mint a ninja?
-              <span
-                class="icon bg-[#D3ED05] text-black rounded-full w-8 h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 flex text-2xl 2xl:text-4xl lg:text-3xl justify-center">+</span>
-            </button>
-            <p
-              class="accordion-content hidden pt-4 lg:pt-6 text-[#ffffff]/70 text-xs  2xl:text-lg leading-7 lg:leading-9 2xl:leading-10">
-              nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. Each ninja
-              is packed with distinct traits, rarity, and hidden utility within the ecosystem.
-            </p>
-          </div>
-          <div
-            class="accordion rounded-3xl lg:rounded-[30px] 2xl:rounded-[35px] bg-[#081016] border border-[#CFCFCF]/15 overflow-hidden p-4 lg:p-8 2xl:p-10">
-            <button
-              class="accordion-btn w-full flex justify-between items-center text-xs lg:text-2xl xl:text-[28px] 2xl:text-3xl font-semibold leading-6 lg:leading-8 xl:leading-9 2xl:leading-10">
-              Will there be a game or metaverse integration?
-              <span
-                class="icon bg-[#D3ED05] text-black rounded-full w-8 h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 flex text-2xl 2xl:text-4xl lg:text-3xl justify-center">+</span>
-            </button>
-            <p
-              class="accordion-content hidden pt-4 lg:pt-6 text-[#ffffff]/70 text-xs 2xl:text-lg leading-7 lg:leading-9 2xl:leading-10">
-              nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. Each ninja
-              is packed with distinct traits, rarity, and hidden utility within the ecosystem.
-            </p>
-          </div>
-          <div
-            class="accordion rounded-3xl lg:rounded-[30px] 2xl:rounded-[35px] bg-[#081016] border border-[#CFCFCF]/15 overflow-hidden p-4 lg:p-8 2xl:p-10">
-            <button
-              class="accordion-btn w-full flex justify-between items-center text-xs lg:text-2xl xl:text-[28px] 2xl:text-3xl font-semibold leading-6 lg:leading-8 xl:leading-9 2xl:leading-10">
-              What is $shadow and how do I earn it?
-              <span
-                class="icon bg-[#D3ED05] text-black rounded-full w-8 h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 flex text-2xl 2xl:text-4xl lg:text-3xl justify-center">+</span>
-            </button>
-            <p
-              class="accordion-content hidden pt-4 lg:pt-6 text-[#ffffff]/70 text-xs 2xl:text-lg leading-7 lg:leading-9 2xl:leading-10">
-              nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. Each ninja
-              is packed with distinct traits, rarity, and hidden utility within the ecosystem.
-            </p>
-          </div>
-          <div
-            class="accordion rounded-3xl lg:rounded-[30px] 2xl:rounded-[35px] bg-[#081016] border border-[#CFCFCF]/15 overflow-hidden p-4 lg:p-8 2xl:p-10">
-            <button
-              class="accordion-btn w-full flex justify-between items-center text-xs lg:text-2xl xl:text-[28px] 2xl:text-3xl font-semibold leading-6 lg:leading-8 xl:leading-9 2xl:leading-10">
-              What can I do with my nftninja?
-              <span
-                class="icon bg-[#D3ED05] text-black rounded-full w-8 h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 flex text-2xl 2xl:text-4xl lg:text-3xl justify-center">+</span>
-            </button>
-            <p
-              class="accordion-content hidden pt-4 lg:pt-6 text-[#ffffff]/70 text-xs 2xl:text-lg leading-7 lg:leading-9 2xl:leading-10">
-              nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. Each ninja
-              is packed with distinct traits, rarity, and hidden utility within the ecosystem.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section>
-      <div class="relative w-full 2xl:px-36 lg:px-10 px-5 2xl:pt-48 lg:pt-20 pt-10">
-        <div class="flex justify-center">
-          <img src="./assets/img/lastbggreen.png" alt=""
-            class="w-full 2xl:h-full xl:h-[559px] lg:h-96 h-[564px] object-cover">
-        </div>
-
-        <div class="absolute inset-0 flex flex-col lg:flex-row justify-between items-center 
-           pl-5 lg:pl-20 xl:pl-28 2xl:pl-56 pr-5 lg:pr-20 xl:pr-28 2xl:pr-40 
-           text-center lg:text-left 2xl:pt-72 lg:pt-32 pt-20">
-
-          <div class="max-w-xl">
-            <p class="text-[#D3ED05] font-semibold text-sm lg:text-xs xl:text-lg 2xl:text-base leading-6">
-              GET STARTED
-            </p>
-
-            <h1 class="text-white font-normal text-3xl lg:text-3xl xl:text-5xl 2xl:text-6xl 
-                 leading-snug 2xl:leading-[87px] lg:leading-10 mt-2">
-              MINT YOUR <br class="hidden lg:block"> NINJA TODAY!
-            </h1>
-
-            <p class="text-[#ffffff]/70 pt-4 text-base lg:text-base xl:text-lg 2xl:text-xl 
-                leading-relaxed font-normal lg:px-0 px-3">
-              Join the nftninja clan on Discord and Twitter to connect with fellow
-              <br class="2xl:block xl:hidden lg:hidden hidden"> collectors, get early updates.
-            </p>
-
-            <div class="2xl:py-5 lg:py-2 py-2 2xl:px-14 lg:px-4 px-5 rounded-lg bg-[#D3ED05] inline-block mt-6 lg:mt-6">
-              <button class="2xl:text-xl xl:text-lg lg:text-sm text-xs font-semibold leading-6 text-black">
-                Mint Your Ninja
-              </button>
-            </div>
-          </div>
-
-          <div class="">
-            <img src="./assets/img/dubbletoy.png" alt=""
-              class="w-full max-w-56 md:max-w-72 lg:max-w-[586px] xl:max-w-lg 2xl:max-w-xl">
-          </div>
-        </div>
-      </div>
-
-
-
-
-    </section>
-
-    <div class="w-full flex justify-center py-6 2xl:mt-48 mt-10">
-      <button id="backToTop" class="flex items-center gap-2 text-white px-6 py-3 transition-colors duration-300 group">
-
-        <i class="fa-solid fa-arrow-up 2xl:text-2xl text-xs group-hover:text-[#D3ED05] animate-bounce-slow"></i>
-        <span class="font-semibold 2xl:text-3xl text-sm leading-8 group-hover:text-[#D3ED05]">
-          Back to top
-        </span>
-      </button>
+    <hr class="my-8 2xl:mx-72 xl:mx-36 lg:mx-20 mx-8">
+    <div class="pb-12">
+      <p class="2xl:text-base xl:text-xl text-sm leading-6 font-normal text-[#657381] text-center">© 2025 UNIGESTA SA.
+        Tous droits
+        réservés.</p>
     </div>
+  </footer>
 
 
 
 
-    <footer>
-      <div class="lg:flex md:grid grid-cols-2 items-start justify-between 2xl:px-24 lg:px-10 px-5 2xl:pt-24 pt-12">
-        <div>
-          <div>
-            <img src="./assets/img/logo.png" class="2xl:w-full xl:w-80 md:w-56 w-72" alt="">
-          </div>
-          <div class="pt-7">
-            <p
-              class="2xl:text-xl xl:text-2xl lg:text-base text-xs 2xl:leading-7 xl:leading-9 lg:leading-7 font-normal text-[#ffffff]/70">
-              Forged in shadows. Ruled by community. <br class="lg:block hidden">
-              Powered by Web3</p>
-          </div>
-          <div class="flex gap-9 items-center pt-12">
-            <div>
-              <img src="./assets/img/Mask group.png" alt="">
-            </div>
-            <div>
-              <img src="./assets/img/x.png" alt="">
-            </div>
-            <div>
-              <img src="./assets/img/w.png" alt="">
-            </div>
-            <div>
-              <img src="./assets/img/y.png" alt="">
-            </div>
-            <div>
-              <img src="./assets/img/t.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center 2xl:gap-48 xl:gap-20 gap-4 lg:mt-0 md:mt-0 mt-10">
-          <div>
-            <div>
-              <p class="2xl:text-2xl xl:text-2xl text-base 2xl:leading-8 leading-2 font-medium text-white">Company</p>
-            </div>
-            <ul class="2xl:pt-12 xl:pt-5 pt-1">
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 "><a
-                  href="./latest news.html">About</a></li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2"><a
-                  href="./ninja collection.html">Blog</a>
-              </li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2">Blog
-                Details</li>
-            </ul>
-          </div>
-          <div class="">
-            <div>
-              <p class="2xl:text-2xl xl:text-2xl text-base leading-8 font-medium text-white">Quick Links</p>
-            </div>
-            <ul class="2xl:pt-12 xl:pt-5 pt-1">
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70">Home</li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2">
-                Tokenomics</li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2">Team
-              </li>
-            </ul>
-          </div>
-          <div class="">
-            <div>
-              <p class="2xl:text-2xl xl:text-2xl text-base leading-8 font-medium text-white">Legal Links</p>
-            </div>
-            <ul class="2xl:pt-12 xl:pt-5 pt-1">
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 ">Terms of Use</li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2">Privacy
-                Policy</li>
-              <li class="2xl:text-xl xl:text-base text-xs leading-8 font-normal text-[#ffffff]/70 2xl:pt-6 pt-2">Team
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center py-5 2xl:mt-36 mt-8">
-        <div class="bg-white h-[2px] 2xl:w-[90%] md:w-[95%] w-[90%]"></div>
-      </div>
-      <div class="2xl:px-24 lg:px-10 px-5 lg:flex items-center md:grid grid-cols-2 justify-between text-white">
-        <div>
-          <p class="2xl:text-xl text-base leading-8 font-normal">© 2025 theriss.net All rights reserved.</p>
-        </div>
-        <div class="flex justify-center items-center gap-4 ">
-          <div>
-            <p class="2xl:text-xl text-sm leading-8 font-normal">Innovation</p>
-          </div>
-          <div>
-            <p class="2xl:text-xl text-sm leading-8 font-normal">Creativity</p>
-          </div>
-          <div>
-            <p class="2xl:text-xl text-sm leading-8 font-normal">Excellence.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
 
 
-  </section>
+
+
+
+
+
+
+
+
   <script>
-    const toggleBtn = document.getElementById('menu-toggle');
+    const toggleButton = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-    toggleBtn.addEventListener('click', () => {
+    toggleButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
-      mobileMenu.classList.toggle('flex'); // Show flex when open
-
-      // Animate hamburger into X
-      const spans = toggleBtn.querySelectorAll('span');
-      spans[0].classList.toggle('rotate-45');
-      spans[0].classList.toggle('translate-y-2');
-      spans[1].classList.toggle('opacity-0');
-      spans[2].classList.toggle('-rotate-45');
-      spans[2].classList.toggle('-translate-y-2');
-    });
-  </script>
-
-
-
-
-
-  <script>
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(acc => {
-      const btn = acc.querySelector('.accordion-btn');
-      const content = acc.querySelector('.accordion-content');
-      const icon = acc.querySelector('.icon');
-
-      btn.addEventListener('click', () => {
-        const isOpen = !content.classList.contains('hidden');
-
-        // Close all accordions
-        document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
-        document.querySelectorAll('.icon').forEach(i => i.textContent = '+');
-
-        // Toggle current
-        if (!isOpen) {
-          content.classList.remove('hidden');
-          icon.textContent = '−';
-        }
-      });
-    });
-  </script>
-
-
-
-  <script>
-    const backToTop = document.getElementById("backToTop");
-
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
-
-
-
-  <script>
-    const counters = document.querySelectorAll('.counter');
-    const options = { threshold: 0.5 };
-
-    const startCounter = (entry) => {
-      if (entry.isIntersecting) {
-        let counter = entry.target;
-        let target = parseFloat(counter.getAttribute('data-target'));
-        let isPercentage = counter.textContent.includes('%');
-        let isHours = counter.textContent.includes('hours');
-        let count = 0;
-        let speed = target / 100; // adjust speed
-
-        let updateCounter = setInterval(() => {
-          count += speed;
-          if (count >= target) {
-            count = target;
-            clearInterval(updateCounter);
-          }
-          if (isPercentage) {
-            counter.textContent = count.toFixed(1) + "%";
-          } else if (isHours) {
-            counter.textContent = Math.floor(count) + "hours";
-          } else {
-            counter.textContent = Math.floor(count) + "+";
-          }
-        }, 20);
-        observer.unobserve(counter);
-      }
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(startCounter);
-    }, options);
-
-    counters.forEach(counter => observer.observe(counter));
-  </script>
-
-
-
-  <!-- cards animation 4 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const cards = document.querySelectorAll(".animate-card");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-              setTimeout(() => {
-                entry.target.classList.add("show");
-              }, i * 200); // har card delay se show hoga
-            }
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      cards.forEach((card) => observer.observe(card));
-    });
-  </script>
-
-
-
-  <!-- moonbirds -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const elements = document.querySelectorAll(".animate-on-scroll");
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const delay = entry.target.getAttribute("data-delay") || 0;
-
-            setTimeout(() => {
-              if (window.innerWidth <= 768) {
-                // 📱 Mobile ke liye
-                entry.target.classList.add("animate-floatUp-mobile");
-              } else {
-                // 💻 Desktop ke liye
-                entry.target.classList.add("animate-floatUp");
-              }
-              entry.target.classList.remove("opacity-0");
-            }, delay);
-          }
-        });
-      }, { threshold: 0.2 });
-
-      elements.forEach((el) => observer.observe(el));
-    });
-  </script>
-
-
-
-
-
-
-  <!-- flowers -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const flowers = document.querySelectorAll(".flower-on-scroll");
-
-      const runFlowerAnimation = (el) => {
-        const imgs = el.querySelectorAll("img");
-        imgs.forEach((img, i) => {
-          setTimeout(() => {
-            img.classList.remove("opacity-0"); // pehle dikhado
-
-            setTimeout(() => {
-              img.classList.remove("animate-flower"); // reset
-              void img.offsetWidth; // reflow trick
-              img.classList.add("animate-flower"); // phir lagao
-            }, 10);
-
-          }, i * 400);
-        });
-      };
-
-      // ✅ Scroll par sirf ek dafa run
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            runFlowerAnimation(entry.target);
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-      flowers.forEach((el) => observer.observe(el));
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
     });
   </script>
 

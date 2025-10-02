@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="flex justify-between items-center 2xl:px-36 lg:px-10 px-5 py-4">
+            <!-- Logo -->
+            <div>
+                <h1 class="2xl:text-2xl lg:text-xl leading-8 font-bold">UNIGESTA SA</h1>
+            </div>
+
+            <!-- Desktop Menu (lg and above) -->
+            <ul class="hidden lg:flex gap-11">
+                <li class="text-[#657381] 2xl:text-2xl text-lg leading-5 font-normal"><a href="">Accueil</a></li>
+                <li class="text-[#D7B242] 2xl:text-2xl text-lg leading-5 font-normal"><a href="">Services</a></li>
+                <li class="text-[#657381] 2xl:text-2xl text-lg leading-5 font-normal"><a href="">Contact</a></li>
+            </ul>
+
+            <!-- Desktop Button (lg and above) -->
+            <div class="hidden lg:block bg-[#D7B242] rounded-md py-2 px-4">
+                <button class="2xl:text-base text-xs leading-5 font-normal">022 809 03 10</button>
+            </div>
+            <!-- Mobile + MD Toggle -->
+            <div class="lg:hidden relative">
+                <button id="menu-toggle" class="p-2">
+                    <!-- Hamburger Icon -->
+                    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <!-- Close Icon (hidden by default) -->
+                    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black hidden"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Mobile/MD Menu -->
+                <ul id="mobile-menu" class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg hidden">
+                    <li class="text-[#D7B242] text-xs leading-5 font-normal border-b border-gray-200">
+                        <a href="" class="block px-4 py-2">Accueil</a>
+                    </li>
+                    <li class="text-[#657381] text-xs leading-5 font-normal border-b border-gray-200">
+                        <a href="" class="block px-4 py-2">Services</a>
+                    </li>
+                    <li class="text-[#657381] text-xs leading-5 font-normal">
+                        <a href="" class="block px-4 py-2">Contact</a>
+                    </li>
+                    <li class="bg-[#D7B242] rounded-md my-2 mx-2 text-center">
+                        <button class="text-xs leading-5 font-normal w-full py-1">022 809 03 10</button>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <section style="background-image: url(./assets/img/blurimg.png);"
+        class="bg-cover bg-center bg-no-repeat w-full 2xl:h-[337px] h-[220px]">
+        <div class="text-center text-white 2xl:py-20 py-10 2xl:px-4 lg:px-10 px-5">
+            <div>
+                <h1 class="2xl:text-[58px] xl:text-4xl text-2xl 2xl:leading-[66px] leading-7 font-bold text-[#192634]">
+                    Nos Services
+                </h1>
+            </div>
+            <div class="2xl:pt-5 pt-3">
+                <p
+                    class="2xl:text-base xl:text-sm text-xs 2xl:leading-7 xl:leading-6 md:leading-6 leading-5 font-normal text-[#657381]">
+                    Depuis
+                    2007, UNIGESTA SA vous accompagne dans tous vos besoins d'assurance et de<br
+                        class="lg:block hidden">
+                    prévoyance. Notre expertise indépendante et notre approche personnalisée garantissent les
+                    <br class="lg:block hidden">meilleures solutions pour votre protection et celle de votre entreprise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="2xl:grid 2xl:grid-cols-2 md:grid md:grid-cols-2 grid grid-cols-1 gap-12 2xl:px-36 lg:px-10 px-5 py-20">
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div>
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10  w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div>
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10 w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div> 
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10  w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div>
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10  w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div>
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10  w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="inline-block 2xl:px-10 px-5 2xl:py-10 py-5 bg-[#FFFFFF]rounded-lg border-2 border-[#E9E7E2] rounded-lg flex">
+                <div class="flex 2xl:gap-4 lg:gap-2 md:gap-4 gap-2">
+                    <div>
+                        <div>
+                            <img src="./assets/img/shield.png" class="2xl:w-14 xl:w-12 md:w-10  w-16" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="2xl:text-2xl xl:text-xl text-base 2xl:leading-8 leading-7 font-bold">Assurances
+                                Personnelles
+                            </h1>
+                        </div>
+                        <div class="2xl:pt-3 pt-1">
+                            <p
+                                class="2xl:text-xl xl:text-base text-xs 2xl:leading-9 xl:leading-8 leading-5 font-normal">
+                                Protection complète pour votre patrimoine personnel</p>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance habitation et
+                                        responsabilité
+                                        civile</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance automobile tous
+                                        risques</p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Assurance voyage et loisirs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex 2xl:items-end items-center 2xl:gap-5 gap-2 2xl:pt-4 pt-1">
+                                <div>
+                                    <i class="fas fa-circle text-[#D7B242] text-[8px]"></i>
+                                </div>
+                                <div>
+                                    <p class="2xl:text-base text-xs leading-5 font-normal">Protection juridique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        toggleButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

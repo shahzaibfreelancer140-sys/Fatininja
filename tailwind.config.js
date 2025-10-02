@@ -4,9 +4,7 @@ module.exports = {
   theme: {
     extend: {
      fontFamily: {
-     DelaGothicOne: ['DelaGothicOne', 'sans-serif'],
-        False: ['False', 'sans-serif'],
-         WorkSans: ['WorkSans', 'sans-serif'],
+     Poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
